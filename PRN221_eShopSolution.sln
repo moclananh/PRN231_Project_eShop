@@ -9,11 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Hosts", "3. Hosts", "{AEBF423D-5B8B-44E5-A220-B3AB9C8F4325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.WebApp", "eShopSolution.WebApp\eShopSolution.WebApp.csproj", "{99882998-A939-4220-871F-13DB164513EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.WebApp", "eShopSolution.WebApp\eShopSolution.WebApp.csproj", "{99882998-A939-4220-871F-13DB164513EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Data", "eShopSolution.Data\eShopSolution.Data.csproj", "{3136BF4F-B39E-43F5-9DF5-30AFFB7D4110}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Data", "eShopSolution.Data\eShopSolution.Data.csproj", "{3136BF4F-B39E-43F5-9DF5-30AFFB7D4110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.ViewModels", "eShopSolution.ViewModels\eShopSolution.ViewModels.csproj", "{DE3EC542-9C95-4192-9EF4-2F59F0669248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Utilities", "eShopSolution.Utilities\eShopSolution.Utilities.csproj", "{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.BackendApi", "eShopSolution.BackendApi\eShopSolution.BackendApi.csproj", "{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3EC542-9C95-4192-9EF4-2F59F0669248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3EC542-9C95-4192-9EF4-2F59F0669248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3EC542-9C95-4192-9EF4-2F59F0669248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3EC542-9C95-4192-9EF4-2F59F0669248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +59,9 @@ Global
 		{99882998-A939-4220-871F-13DB164513EA} = {AEBF423D-5B8B-44E5-A220-B3AB9C8F4325}
 		{3136BF4F-B39E-43F5-9DF5-30AFFB7D4110} = {B34486B5-EA77-4DD1-936E-A1F926964803}
 		{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A} = {B34486B5-EA77-4DD1-936E-A1F926964803}
+		{DE3EC542-9C95-4192-9EF4-2F59F0669248} = {298F2A03-493B-445C-9772-F16D1649B0BA}
+		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C} = {298F2A03-493B-445C-9772-F16D1649B0BA}
+		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9} = {AEBF423D-5B8B-44E5-A220-B3AB9C8F4325}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66A83F2D-8456-4EAE-AED3-AF0694F8AC61}
