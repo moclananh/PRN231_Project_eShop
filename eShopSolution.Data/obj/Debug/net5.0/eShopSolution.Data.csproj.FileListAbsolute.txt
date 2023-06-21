@@ -1,0 +1,15 @@
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\bin\Debug\net5.0\eShopSolution.Data.deps.json
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\bin\Debug\net5.0\eShopSolution.Data.runtimeconfig.json
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\bin\Debug\net5.0\eShopSolution.Data.runtimeconfig.dev.json
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\bin\Debug\net5.0\eShopSolution.Data.dll
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\bin\Debug\net5.0\eShopSolution.Data.pdb
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.csproj.AssemblyReference.cache
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.AssemblyInfoInputs.cache
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.AssemblyInfo.cs
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.csproj.CoreCompileInputs.cache
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.dll
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\refint\eShopSolution.Data.dll
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.pdb
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\eShopSolution.Data.genruntimeconfig.cache
+D:\FU_Hub\SU23\PRN221\CODE\PRN221_eShopSolution\eShopSolution.Data\obj\Debug\net5.0\ref\eShopSolution.Data.dll
