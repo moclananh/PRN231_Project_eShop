@@ -1,0 +1,12 @@
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net5.0\eShopSolution.ViewModels.deps.json
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net5.0\eShopSolution.ViewModels.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net5.0\eShopSolution.ViewModels.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.csproj.AssemblyReference.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.AssemblyInfoInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.AssemblyInfo.cs
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.csproj.CoreCompileInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\refint\eShopSolution.ViewModels.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\eShopSolution.ViewModels.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net5.0\ref\eShopSolution.ViewModels.dll
