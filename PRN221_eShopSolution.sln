@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Data", "eShop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Application", "eShopSolution.Application\eShopSolution.Application.csproj", "{7CDD1DE1-201D-4E8E-A256-9591D8E0F53A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.ViewModels", "eShopSolution.ViewModels\eShopSolution.ViewModels.csproj", "{DE3EC542-9C95-4192-9EF4-2F59F0669248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.ViewModels", "eShopSolution.ViewModels\eShopSolution.ViewModels.csproj", "{DE3EC542-9C95-4192-9EF4-2F59F0669248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.Utilities", "eShopSolution.Utilities\eShopSolution.Utilities.csproj", "{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.Utilities", "eShopSolution.Utilities\eShopSolution.Utilities.csproj", "{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.BackendApi", "eShopSolution.BackendApi\eShopSolution.BackendApi.csproj", "{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopSolution.BackendApi", "eShopSolution.BackendApi\eShopSolution.BackendApi.csproj", "{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopSolution.AdminApp", "eShopSolution.AdminApp\eShopSolution.AdminApp.csproj", "{EE585B86-AD08-4E3A-8003-150E22023C20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE585B86-AD08-4E3A-8003-150E22023C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE585B86-AD08-4E3A-8003-150E22023C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE585B86-AD08-4E3A-8003-150E22023C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE585B86-AD08-4E3A-8003-150E22023C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{DE3EC542-9C95-4192-9EF4-2F59F0669248} = {298F2A03-493B-445C-9772-F16D1649B0BA}
 		{BA62A384-9CBE-4173-80E9-EDAB5F5B9F9C} = {298F2A03-493B-445C-9772-F16D1649B0BA}
 		{DD6D71BE-6E54-4BDF-8A9A-41312AAA28A9} = {AEBF423D-5B8B-44E5-A220-B3AB9C8F4325}
+		{EE585B86-AD08-4E3A-8003-150E22023C20} = {AEBF423D-5B8B-44E5-A220-B3AB9C8F4325}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66A83F2D-8456-4EAE-AED3-AF0694F8AC61}
