@@ -144,9 +144,13 @@ namespace eShopSolution.BackendApi
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseAuthentication();
             app.UseRouting();
-            app.UseSwagger();
+
             app.UseAuthorization();
+
+            app.UseSwagger();
+
 
             app.UseEndpoints(endpoints =>
             {
