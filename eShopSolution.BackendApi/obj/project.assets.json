@@ -3306,7 +3306,10 @@
         },
         "runtime": {
           "bin/placeholder/eShopSolution.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "eShopSolution.Data/1.0.0": {
         "type": "project",

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <UserSecretsId>7a58f296-cb31-43fb-8af4-a3a1b6b6fc77</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\user-content\eff28dc7-8304-421d-b955-bf81e63b8781.jpg" />
+    <None Include="wwwroot\user-content\red_rose.jpg" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\eShopSolution.Application\eShopSolution.Application.csproj" />
+		<ProjectReference Include="..\eShopSolution.Data\eShopSolution.Data.csproj" />
+		<ProjectReference Include="..\eShopSolution.Utilities\eShopSolution.Utilities.csproj" />
+		<ProjectReference Include="..\eShopSolution.ViewModels\eShopSolution.ViewModels.csproj" />
+	</ItemGroup>
+	
+</Project>
