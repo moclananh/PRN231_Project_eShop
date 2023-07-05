@@ -1,10 +1,3 @@
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.csproj.AssemblyReference.cache
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.GeneratedMSBuildEditorConfig.editorconfig
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.AssemblyInfoInputs.cache
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.AssemblyInfo.cs
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.csproj.CoreCompileInputs.cache
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.MvcApplicationPartsAssemblyInfo.cs
-D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.MvcApplicationPartsAssemblyInfo.cache
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\appsettings.Development.json
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\appsettings.json
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\APIs.exe
@@ -142,6 +135,13 @@ D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\ne
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\eShopSolution.Data.pdb
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\eShopSolution.Utilities.pdb
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\bin\Debug\net5.0\eShopSolution.ViewModels.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.csproj.AssemblyReference.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.AssemblyInfoInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.AssemblyInfo.cs
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.csproj.CoreCompileInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.MvcApplicationPartsAssemblyInfo.cs
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\APIs.MvcApplicationPartsAssemblyInfo.cache
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\scopedcss\bundle\APIs.styles.css
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\staticwebassets\APIs.StaticWebAssets.Manifest.cache
 D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\APIs\obj\Debug\net5.0\staticwebassets\APIs.StaticWebAssets.Pack.cache

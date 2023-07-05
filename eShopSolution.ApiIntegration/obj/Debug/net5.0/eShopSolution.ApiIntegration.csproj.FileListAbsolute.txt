@@ -1,0 +1,17 @@
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.ApiIntegration.deps.json
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.ApiIntegration.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.ApiIntegration.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.Utilities.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.ViewModels.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.Utilities.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net5.0\eShopSolution.ViewModels.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.csproj.AssemblyReference.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.AssemblyInfoInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.AssemblyInfo.cs
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.csproj.CoreCompileInputs.cache
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.csproj.CopyComplete
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\refint\eShopSolution.ApiIntegration.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\eShopSolution.ApiIntegration.pdb
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net5.0\ref\eShopSolution.ApiIntegration.dll
