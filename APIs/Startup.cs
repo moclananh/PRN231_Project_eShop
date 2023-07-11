@@ -26,6 +26,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace APIs
 {
     public class Startup
@@ -46,6 +47,7 @@ namespace APIs
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<EShopDbContext>()
                 .AddDefaultTokenProviders();
+
 
             //Declare DI
             services.AddTransient<IStorageService, FileStorageService>();

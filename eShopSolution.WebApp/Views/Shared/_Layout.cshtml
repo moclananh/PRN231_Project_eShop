@@ -43,7 +43,7 @@
             <div id="welcomeLine" class="row">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <div class="span6">Welcome!<strong> @User.Identity.Name</strong></div>
+                    <a asp-action="Details" asp-controller="User"  class="span6">Welcome!<strong> @User.Identity.Name</strong></a>
                 }
                 else
                 {
