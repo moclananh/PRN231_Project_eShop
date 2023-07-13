@@ -33,15 +33,15 @@ namespace eShopSolution.Application.System.Users
             _config = config;
         }
 
-        public async Task<ApiResult<string>> Authencate(LoginRequest request)
+        public async Task<LoginRespone<string>> Authencate(LoginRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
-            if (user == null) return new ApiErrorResult<string>("Tài khoản không tồn tại");
+            if (user == null) return new LoginErrorRespone<string>("Tài khoản không tồn tại");
 
             var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, true);
             if (!result.Succeeded)
             {
-                return new ApiErrorResult<string>("Đăng nhập không đúng");
+                return new LoginErrorRespone<string>("Đăng nhập không đúng");
             }
             var roles = await _userManager.GetRolesAsync(user);
             var claims = new[]
@@ -54,7 +54,10 @@ namespace eShopSolution.Application.System.Users
             var loginResult = new LoginResult
             {
                 ID = user.Id,
+                
             };
+            Guid id = loginResult.ID;
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -64,7 +67,7 @@ namespace eShopSolution.Application.System.Users
                 expires: DateTime.Now.AddHours(3),
                 signingCredentials: creds);
 
-            return new LoginRespone<string>(new JwtSecurityTokenHandler().WriteToken(token), loginResult);
+            return new LoginRespone<string>(new JwtSecurityTokenHandler().WriteToken(token),id);
         }
 
         public async Task<ApiResult<bool>> Delete(Guid id)
