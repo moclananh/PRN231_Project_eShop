@@ -51,6 +51,10 @@ namespace eShopSolution.Application.System.Users
                 new Claim(ClaimTypes.Role, string.Join(";",roles)),
                 new Claim(ClaimTypes.Name, request.UserName)
             };
+            var loginResult = new LoginResult
+            {
+                ID = user.Id,
+            };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -60,7 +64,7 @@ namespace eShopSolution.Application.System.Users
                 expires: DateTime.Now.AddHours(3),
                 signingCredentials: creds);
 
-            return new ApiSuccessResult<string>(new JwtSecurityTokenHandler().WriteToken(token));
+            return new LoginRespone<string>(new JwtSecurityTokenHandler().WriteToken(token), loginResult);
         }
 
         public async Task<ApiResult<bool>> Delete(Guid id)
