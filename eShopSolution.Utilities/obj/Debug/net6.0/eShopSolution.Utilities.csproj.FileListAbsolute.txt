@@ -22,3 +22,15 @@ D:\Study\PRN221\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Deb
 D:\Study\PRN221\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\Study\PRN221\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\Study\PRN221\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\study\C_Project\PRN221\backupProject\prn221_project_estoreapplication\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll

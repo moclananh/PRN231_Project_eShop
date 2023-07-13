@@ -23,17 +23,17 @@ namespace eShopSolution.WebApp.Controllers
             IConfiguration configuration)
         {
             _userApiClient = userApiClient;
-            _configuration = configuration;;
+            _configuration = configuration;
         }
 
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
             //loi
-            string userID = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            id = Guid.Parse(userID);
+            var sessions = HttpContext.Session.GetString("isSuccessed");
 
-            //chay duoc
+
+            id = Guid.Parse(sessions);
             var result = await _userApiClient.GetById(id);
             return View(result.ResultObj);
         }
