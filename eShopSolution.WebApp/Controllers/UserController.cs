@@ -30,10 +30,8 @@ namespace eShopSolution.WebApp.Controllers
         public async Task<IActionResult> Details(Guid id)
         {
             //loi
-            var sessions = HttpContext.Session.GetString("isSuccessed");
-
-
-            id = Guid.Parse(sessions);
+            var userId = User.FindFirstValue(ClaimTypes.Dsa);
+            id = Guid.Parse(userId);
             var result = await _userApiClient.GetById(id);
             return View(result.ResultObj);
         }
@@ -42,6 +40,8 @@ namespace eShopSolution.WebApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
+            var userId = User.FindFirstValue(ClaimTypes.Dsa);
+            id = Guid.Parse(userId);
             var result = await _userApiClient.GetById(id);
             if (result.IsSuccessed)
             {
@@ -65,12 +65,14 @@ namespace eShopSolution.WebApp.Controllers
         {
             if (!ModelState.IsValid)
                 return View();
+            var userId = User.FindFirstValue(ClaimTypes.Dsa);
+            var id = Guid.Parse(userId);
 
-            var result = await _userApiClient.UpdateUser(request.Id, request);
+            var result = await _userApiClient.UpdateUser(id, request);
             if (result.IsSuccessed)
             {
                 TempData["result"] = "Cập nhật người dùng thành công";
-                return RedirectToAction("Index");
+                return RedirectToAction("Details");
             }
 
             ModelState.AddModelError("", result.Message);

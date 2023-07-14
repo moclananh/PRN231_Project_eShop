@@ -9,7 +9,7 @@ namespace eShopSolution.Application.System.Users
 {
     public interface IUserService
     {
-        Task<ApiResult<string>> Authencate(LoginRequest request);
+        Task<LoginRespone<string>> Authencate(LoginRequest request);
 
         Task<ApiResult<bool>> Register(RegisterRequest request);
 

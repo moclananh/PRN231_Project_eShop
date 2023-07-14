@@ -44,6 +44,7 @@ namespace eShopSolution.WebApp.Controllers
 
             var result = await _userApiClient.Authenticate(request);
             var resultID = await _userApiClient.Authenticate(request);
+
             if (result.ResultObj == null)
             {
                 ModelState.AddModelError("", "Login failure");
