@@ -25,9 +25,9 @@
      </div> -->
     <form asp-action="Register" asp-controller="Account" method="post" class="form-horizontal">
         <h4>Your personal information</h4>
-        <div asp-validation-summary="All" class="text-error">
+       @* <div asp-validation-summary="All" class="text-error">
             <button type="button" class="close" data-dismiss="alert">×</button>
-        </div>
+        </div>*@
         <div class="control-group">
             <label class="control-label" for="inputFname1">First name <sup>*</sup></label>
             <div class="controls">
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <p><sup>*</sup>Required field	</p>
+     
 
         <div class="control-group">
             <div class="controls">

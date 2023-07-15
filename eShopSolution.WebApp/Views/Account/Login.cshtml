@@ -12,7 +12,7 @@
 <h3> Login</h3>
 <hr class="soft" />
 
-<div class="row">
+<div class="row" style="flex-wrap: nowrap">
     <div class="span4">
         <div class="well">
             <h5>CREATE YOUR ACCOUNT</h5><br />
@@ -33,14 +33,14 @@
                 <div class="control-group">
                     <label class="control-label" for="inputEmail1">Email</label>
                     <div class="controls">
-                        <input class="span3" type="text" asp-for="UserName" placeholder="Email">
+                        <input class="span3" type="text" asp-for="UserName" placeholder="Email" style="height: 36px">
                         <span asp-validation-for="UserName" class="text-error"></span>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputPassword1">Password</label>
                     <div class="controls">
-                        <input type="password" class="span3" asp-for="Password" placeholder="Password">
+                        <input type="password" class="span3" asp-for="Password" placeholder="Password" style="height: 36px">
                         <span asp-validation-for="Password" class="text-error"></span>
                     </div>
                 </div>

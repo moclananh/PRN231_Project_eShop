@@ -4,56 +4,37 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 style="text-align: center; margin-top: 20px; color: #333;">User Detail</h1>
 
-<div>
-    <h4>UserVm</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhoneNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Dob)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dob)
-        </dd>
-    </dl>
+<div class="container">
+    <table class="table">
+
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.FirstName)</th>
+            <td>@Html.DisplayFor(model => model.FirstName)</td>
+        </tr>
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.LastName)</th>
+            <td>@Html.DisplayFor(model => model.LastName)</td>
+        </tr>
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.PhoneNumber)</th>
+            <td>@Html.DisplayFor(model => model.PhoneNumber)</td>
+        </tr>
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.UserName)</th>
+            <td>@Html.DisplayFor(model => model.UserName)</td>
+        </tr>
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.Email)</th>
+            <td>@Html.DisplayFor(model => model.Email)</td>
+        </tr>
+        <tr>
+            <th style="width: 30%; color: #333;">@Html.DisplayNameFor(model => model.Dob)</th>
+            <td>@Html.DisplayFor(model => model.Dob)</td>
+        </tr>
+    </table>
 </div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) 
+<div style="text-align: center; margin-top: 20px;">
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }, new { @class = "btn btn-primary" })
 </div>

@@ -9,7 +9,7 @@
     var culture = CultureInfo.CurrentCulture.Name;
 }
 <ul class="breadcrumb">
-    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li><a href="/">Home</a> <span class="divider">/</span></li>
     <li class="active"> SHOPPING CART</li>
 </ul>
 <h3>
@@ -59,31 +59,31 @@ else
         <tr><th>ESTIMATE YOUR SHIPPING </th></tr>
         <tr>
             <td>
-                <form class="form-horizontal" action="/@culture/Cart/Checkout" method="post">
+                <form class="form-horizontal" action="/@culture/Cart/Checkout" method="post" onsubmit="return validateForm()">
                     <div class="control-group">
                         <label class="control-label" for="inputCountry">Name </label>
                         <div class="controls">
-                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Name" placeholder="Name">
+                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Name" placeholder="Name" style="height: 36px" class="name-user">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputCountry">Address </label>
                         <div class="controls">
-                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Address" placeholder="Address">
+                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Address" placeholder="Address" style="height: 36px" class="name-address">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label" for="inputCountry">Email </label>
                         <div class="controls">
-                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Email" placeholder="Email">
+                            <input type="text" id="inputCountry" asp-for="CheckoutModel.Email" placeholder="Email" style="height: 36px" class="name-email">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label" for="inputCountry">PhoneNumber </label>
                         <div class="controls">
-                            <input type="text" id="inputCountry" asp-for="CheckoutModel.PhoneNumber" placeholder="PhoneNumber">
+                            <input type="text" id="inputCountry" asp-for="CheckoutModel.PhoneNumber" placeholder="PhoneNumber" style="height: 36px" class="name-phone">
                         </div>
                     </div>
 
@@ -98,3 +98,20 @@ else
     </table>
     <a href="/" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
 }
+
+<script>
+    function validateForm() {
+        var name = document.querySelector('.name-user').value;
+        var address = document.querySelector('.name-address').value;
+        var email = document.querySelector('.name-email').value;
+        var phoneNumber = document.querySelector('.name-phone').value;
+
+        console.log(name);
+
+        if (name.trim() === '' || address.trim() === '' || email.trim() === '' || phoneNumber.trim() === '') {
+            alert('Please fill in all fields');
+            return false;
+        }
+        return true;
+    }
+</script>

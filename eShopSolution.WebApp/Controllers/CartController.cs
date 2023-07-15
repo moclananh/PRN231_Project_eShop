@@ -53,7 +53,7 @@ namespace eShopSolution.WebApp.Controllers
                 OrderDetails = orderDetails
             };
             //TODO: Add to API
-            TempData["SuccessMsg"] = "Order puschased successful";
+            TempData["SuccessMsg"] = "Order purchased successfully";
             return View(model);
         }
 

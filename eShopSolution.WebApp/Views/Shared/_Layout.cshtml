@@ -33,6 +33,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/themes/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/themes/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXzmvVRqRkMghjHzEqh7NqzC4BxmMUrQz9Tm8/a6uzTDsS9rSFKF/jOoq3b01GnEzyP+8W8nmLr2BysAm3mL+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style type="text/css" id="enject"></style>
 </head>
 <body>
@@ -40,7 +43,7 @@
     <input type="hidden" id="hidBaseAddress" value="@Configuration["BaseAddress"]" />
     <div id="header">
         <div class="container">
-            <div id="welcomeLine" class="row">
+            <div id="welcomeLine" class="row" style="flex-wrap: nowrap !important">
                 @if (User.Identity.IsAuthenticated)
                 {
                     <a asp-action="Details" asp-controller="User"  class="span6">Welcome!<strong> @User.Identity.Name</strong></a>
@@ -64,23 +67,22 @@
                 </div>
             </div>
             <!-- Navbar ================================================== -->
-            <div id="logoArea" class="navbar">
+            <div id="logoArea" class="navbar" style="display:block !important; padding:0 !important">
                 <a id="smallScreen" data-target="#topMenu" data-toggle="collapse" class="btn btn-navbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <div class="navbar-inner">
-                    <a class="brand" href="index.html"><img src="/themes/images/logo.png" alt="Bootsshop" /></a>
+                <div class="navbar-inner" style="background-color:lightpink; background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,112,0.3) 35%, rgba(0,212,255,1) 100%); display: flex; align-items:center">
+                    <a class="brand" href="/"><img src="/themes/images/logo.png" alt="Bootsshop" style="width:100px"/></a>
                     <form class="form-inline navbar-search" method="post" action="products.html">
-                        <input id="srchFld" class="srchTxt" type="text" />
-                        <select class="srchTxt">
+                        <input id="srchFld" class="srchTxt" type="text" style="height:30px; border-radius: 16px; margin-right: 8px"/>
+                        <select class="srchTxt" style="border-radius: 16px; padding: 3px; margin-right: 8px">
                             <option>All</option>
-                            <option>CLOTHES </option>
-                            <option>FOOD AND BEVERAGES </option>
-                            <option>HEALTH & BEAUTY </option>
-                            <option>SPORTS & LEISURE </option>
-                            <option>BOOKS & ENTERTAINMENTS </option>
+                            <option>Love Flower </option>
+                            <option>Congratulation Flower </option>
+                            <option>Condolence Flower </option>
+                            <option>Birthday Flower </option>
                         </select>
                         <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
                     </form>
@@ -113,7 +115,7 @@
     @RenderSection("slider", required: false)
     <div id="mainBody">
         <div class="container">
-            <div class="row">
+            <div class="row" style="flex-wrap: nowrap; margin-right: 0px; margin-left: -30px">
                 <!-- Sidebar ================================================== -->
                 @await Component.InvokeAsync("SideBar")
                 <!-- Sidebar end=============================================== -->
@@ -124,42 +126,32 @@
         </div>
     </div>
     <!-- Footer ================================================================== -->
-    <div id="footerSection">
-        <div class="container">
-            <div class="row">
-                <div class="span3">
-                    <h5>ACCOUNT</h5>
-                    <a href="login.html">YOUR ACCOUNT</a>
-                    <a href="login.html">PERSONAL INFORMATION</a>
-                    <a href="login.html">ADDRESSES</a>
-                    <a href="login.html">DISCOUNT</a>
-                    <a href="login.html">ORDER HISTORY</a>
-                </div>
-                <div class="span3">
-                    <h5>INFORMATION</h5>
-                    <a href="contact.html">CONTACT</a>
-                    <a href="register.html">REGISTRATION</a>
-                    <a href="legal_notice.html">LEGAL NOTICE</a>
-                    <a href="tac.html">TERMS AND CONDITIONS</a>
-                    <a href="faq.html">FAQ</a>
-                </div>
-                <div class="span3">
-                    <h5>OUR OFFERS</h5>
-                    <a href="#">NEW PRODUCTS</a>
-                    <a href="#">TOP SELLERS</a>
-                    <a href="special_offer.html">SPECIAL OFFERS</a>
-                    <a href="#">MANUFACTURERS</a>
-                    <a href="#">SUPPLIERS</a>
-                </div>
-                <div id="socialMedia" class="span3 pull-right">
-                    <h5>SOCIAL MEDIA </h5>
-                    <a href="#"><img width="60" height="60" src="/themes/images/facebook.png" title="facebook" alt="facebook" /></a>
-                    <a href="#"><img width="60" height="60" src="/themes/images/twitter.png" title="twitter" alt="twitter" /></a>
-                    <a href="#"><img width="60" height="60" src="/themes/images/youtube.png" title="youtube" alt="youtube" /></a>
-                </div>
+    <div class="container my-5">
+
+        <footer class="text-center text-lg-start" style="background-color: lightpink;">
+            <div class="container d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fab fa-youtube"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fab fa-twitter"></i>
+                </button>
             </div>
-            <p class="pull-right">&copy; Bootshop</p>
-        </div><!-- Container End -->
+
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © Happiness radiates like the fragrance from a flower and draws all good things towards you.
+               
+            </div>
+            <!-- Copyright -->
+        </footer>
+
     </div>
     <!-- Placed at the end of the document so the pages load faster ============================================= -->
     <script src="/themes/js/jquery.js" type="text/javascript"></script>
@@ -169,11 +161,14 @@
     <script src="/themes/js/bootshop.js"></script>
     <script src="/themes/js/jquery.lightbox-0.5.js"></script>
     <script src="/js/site.js"></script>
+
     <script>
         var site = new SiteController();
         site.initialize();
     </script>
     @RenderSection("scripts", required: false)
+
+    @RenderSection("links", required: false)
 
     <!-- Themes switcher section ============================================================================================= -->
     <div id="secectionBox">

@@ -54,7 +54,7 @@
         <hr class="soft" />
         <form class="form-horizontal qtyFrm">
             <div class="control-group">
-                <label class="control-label"><span>$222.00</span></label>
+                <label class="control-label"><span>@Model.Product.Price</span></label>
                 <div class="controls">
                     <input type="number" class="span1" placeholder="Qty." />
                     <button type="submit" class="btn btn-large btn-primary pull-right"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></button>
@@ -63,8 +63,8 @@
         </form>
 
         <hr class="soft" />
-        <h4>100 items in stock</h4>
-        <form class="form-horizontal qtyFrm pull-right">
+        <h4>Stock: @Model.Product.Stock items</h4>
+        @*<form class="form-horizontal qtyFrm pull-right">
             <div class="control-group">
                 <label class="control-label"><span>Color</span></label>
                 <div class="controls">
@@ -76,7 +76,7 @@
                     </select>
                 </div>
             </div>
-        </form>
+        </form>*@
         <hr class="soft clr" />
         <p>
             @Html.Raw(Model.Product.Details)
