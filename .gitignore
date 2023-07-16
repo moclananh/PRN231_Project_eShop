@@ -9,6 +9,18 @@
 *.user
 *.userosscache
 *.sln.docstates
+\eShopSolution.AdminApp\bin
+\eShopSolution.ApiIntegration\bin
+\eShopSolution.WebApp\bin
+\APIs\bin
+.eShopSolution.AdminApp\bin
+.eShopSolution.ApiIntegration\bin
+.eShopSolution.WebApp\bin
+.APIs\bin
+eShopSolution.AdminApp\bin
+eShopSolution.ApiIntegration\bin
+eShopSolution.WebApp\bin
+APIs\bin
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
