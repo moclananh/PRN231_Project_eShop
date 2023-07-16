@@ -83,3 +83,5 @@ D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ApiInte
 D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net6.0\refint\eShopSolution.ApiIntegration.dll
 D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net6.0\eShopSolution.ApiIntegration.pdb
 D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ApiIntegration\obj\Debug\net6.0\ref\eShopSolution.ApiIntegration.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net6.0\eShopSolution.Data.dll
+D:\FU_Hub\SU23\PRN221\PROJECT\prn221_project_estoreapplication\eShopSolution.ApiIntegration\bin\Debug\net6.0\eShopSolution.Data.pdb
