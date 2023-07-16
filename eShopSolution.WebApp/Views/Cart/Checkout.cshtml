@@ -27,6 +27,7 @@ else
     <table class="table table-bordered">
         <thead>
             <tr>
+                
                 <th>Product</th>
                 <th>Description</th>
                 <th>Quantity</th>
@@ -89,7 +90,10 @@ else
 
                     <div class="control-group">
                         <div class="controls">
-                            <button type="submit" class="btn">Purchase </button>
+                            <button type="submit" class="btn">
+                                Purchase
+                            </button>
+
                         </div>
                     </div>
                 </form>
@@ -111,6 +115,9 @@ else
         if (name.trim() === '' || address.trim() === '' || email.trim() === '' || phoneNumber.trim() === '') {
             alert('Please fill in all fields');
             return false;
+        }
+        else{
+             Model.CartItems.Clear();
         }
         return true;
     }

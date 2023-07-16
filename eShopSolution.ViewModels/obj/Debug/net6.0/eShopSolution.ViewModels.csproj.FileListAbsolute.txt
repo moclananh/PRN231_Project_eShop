@@ -46,3 +46,15 @@ F:\Subjects\PRN221\Project_Nhom_ver04\eShopSolution.ViewModels\obj\Debug\net6.0\
 F:\Subjects\PRN221\Project_Nhom_ver04\eShopSolution.ViewModels\obj\Debug\net6.0\refint\eShopSolution.ViewModels.dll
 F:\Subjects\PRN221\Project_Nhom_ver04\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.pdb
 F:\Subjects\PRN221\Project_Nhom_ver04\eShopSolution.ViewModels\obj\Debug\net6.0\ref\eShopSolution.ViewModels.dll
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.deps.json
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.dll
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.pdb
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.csproj.AssemblyReference.cache
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.AssemblyInfoInputs.cache
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.AssemblyInfo.cs
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.csproj.CoreCompileInputs.cache
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.dll
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\refint\eShopSolution.ViewModels.dll
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.pdb
+D:\Study\PRN221\TestLogIn\prn221_project_estoreapplication\eShopSolution.ViewModels\obj\Debug\net6.0\ref\eShopSolution.ViewModels.dll

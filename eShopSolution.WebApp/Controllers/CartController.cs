@@ -52,6 +52,9 @@ namespace eShopSolution.WebApp.Controllers
                 PhoneNumber = request.CheckoutModel.PhoneNumber,
                 OrderDetails = orderDetails
             };
+
+
+            RemoveAllCart();
             //TODO: Add to API
             TempData["SuccessMsg"] = "Order purchased successfully";
             return View(model);
@@ -117,6 +120,20 @@ namespace eShopSolution.WebApp.Controllers
                     item.Quantity = quantity;
                 }
             }
+
+            HttpContext.Session.SetString(SystemConstants.CartSession, JsonConvert.SerializeObject(currentCart));
+            return Ok(currentCart);
+        }
+
+
+        public IActionResult RemoveAllCart()
+        {
+            var session = HttpContext.Session.GetString(SystemConstants.CartSession);
+            List<CartItemViewModel> currentCart = new List<CartItemViewModel>();
+            if (session != null)
+                currentCart = JsonConvert.DeserializeObject<List<CartItemViewModel>>(session);
+
+            currentCart.Clear();
 
             HttpContext.Session.SetString(SystemConstants.CartSession, JsonConvert.SerializeObject(currentCart));
             return Ok(currentCart);

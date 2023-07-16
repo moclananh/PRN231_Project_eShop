@@ -426,19 +426,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\tt\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
+      "projectUniqueName": "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
       "projectName": "eShopSolution.ApiIntegration",
-      "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.ApiIntegration\\obj\\",
+      "projectPath": "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
+      "packagesPath": "C:\\Users\\tt\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -446,17 +451,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\Study\\PRN221\\TestLogIn\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -492,7 +498,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
