@@ -18,6 +18,6 @@ namespace eShopSolution.Application.Catalog.Categories
 
         Task<int> Update(CategoryUpdateRequest request);
 
-        Task<int> Delete(int productId);
+        Task<int> Delete(int categoryId);
     }
 }

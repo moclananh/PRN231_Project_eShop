@@ -73,8 +73,8 @@
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Name)
                                 </td>
-                                <td>
-                                    @Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |
+                                <td>                   
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.Id })|
                                     @*                                    @Html.ActionLink("Xem", "Details", new { id = item.Id }) |*@
                                     @Html.ActionLink("Xóa", "Delete", new { id = item.Id })
                                 </td>

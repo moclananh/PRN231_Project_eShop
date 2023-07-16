@@ -11483,24 +11483,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristino\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MinhHung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+      "projectUniqueName": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
       "projectName": "eShopSolution.WebApp",
-      "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
-      "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.WebApp\\obj\\",
+      "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+      "packagesPath": "C:\\Users\\MinhHung\\.nuget\\packages\\",
+      "outputPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.WebApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MinhHung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11508,15 +11503,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj"
+            "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj": {
+              "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj"
             }
           }
         }
@@ -11563,24 +11557,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11589,7 +11565,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

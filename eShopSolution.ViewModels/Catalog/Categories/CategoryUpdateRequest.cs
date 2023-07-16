@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShopSolution.Data.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace eShopSolution.ViewModels.Catalog.Categories
         public string SeoTitle { set; get; }
         public string SeoAlias { set; get; }
         public string LanguageId { set; get; }
-
+        public Status Status { set; get; }
         public bool? IsFeatured { get; set; }
     }
 }

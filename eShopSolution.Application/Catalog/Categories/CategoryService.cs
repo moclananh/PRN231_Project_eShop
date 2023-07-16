@@ -11,16 +11,20 @@ using eShopSolution.Utilities.Constants;
 using eShopSolution.Data.Enums;
 using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.Catalog.Products;
+using eShopSolution.Utilities.Exceptions;
+using eShopSolution.Application.Common;
 
 namespace eShopSolution.Application.Catalog.Categories
 {
     public class CategoryService : ICategoryService
     {
         private readonly EShopDbContext _context;
+        private readonly IStorageService _storageService;
 
-        public CategoryService(EShopDbContext context)
+        public CategoryService(EShopDbContext context, IStorageService storageService)
         {
             _context = context;
+            _storageService = storageService;   
         }
 
         public async Task<int> Create(CategoryCreateRequest request)
@@ -66,14 +70,34 @@ namespace eShopSolution.Application.Catalog.Categories
             return category.Id;
         }
 
-        public Task<int> Update(CategoryUpdateRequest request)
+        public async Task<int> Update(CategoryUpdateRequest request)
         {
-            throw new NotImplementedException();
+            {
+                var category = await _context.Categories.FindAsync(request.Id);
+                var categoryTranslations = await _context.CategoryTranslations.FirstOrDefaultAsync(x => x.CategoryId == request.Id
+                && x.LanguageId == request.LanguageId);
+
+                if (category == null || categoryTranslations == null) throw new EShopException($"Cannot find a category with id: {request.Id}");
+
+                categoryTranslations.Name = request.Name;
+                categoryTranslations.SeoAlias = request.SeoAlias;
+                categoryTranslations.SeoDescription = request.SeoDescription;
+                categoryTranslations.SeoTitle = request.SeoTitle;
+                categoryTranslations.LanguageId = request.LanguageId;
+                category.SortOrder = request.SortOrder;
+                category.Status = request.Status;
+                category.IsShowOnHome = request.IsShowOnHome;
+                return await _context.SaveChangesAsync();
+            }
         }
 
-        public Task<int> Delete(int productId)
+        public async Task<int> Delete(int categoryId)
         {
-            throw new NotImplementedException();
+            var category = await _context.Categories.FindAsync(categoryId);
+            if (category == null) throw new EShopException($"Cannot find a product: {categoryId}");
+
+            _context.Categories.Remove(category);
+            return await _context.SaveChangesAsync();
         }
 
         public async Task<List<CategoryVm>> GetAll(string languageId)

@@ -40,7 +40,7 @@ namespace eShopSolution.WebApp.Controllers
             });
             return View(new ProductCategoryViewModel()
             {
-                Category = await _categoryApiClient.GetById(culture, id),
+                Category = await _categoryApiClient.GetById(id, culture),
                 Products = products
             }); ;
         }

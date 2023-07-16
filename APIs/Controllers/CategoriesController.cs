@@ -60,5 +60,31 @@ namespace APIs.Controllers
 
             return CreatedAtAction(nameof(GetById), new { id = categoryId }, category);
         }
+
+        [HttpPut("{categoryId}")]
+        [Consumes("multipart/form-data")]
+        [Authorize]
+        public async Task<IActionResult> Update([FromRoute] int categoryId, [FromForm] CategoryUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            request.Id = categoryId;
+            var affectedResult = await _categoryService.Update(request);
+            if (affectedResult == 0)
+                return BadRequest();
+            return Ok();
+        }
+
+        [HttpDelete("{categoryId}")]
+        [Authorize]
+        public async Task<IActionResult> Delete(int categoryId)
+        {
+            var affectedResult = await _categoryService.Delete(categoryId);
+            if (affectedResult == 0)
+                return BadRequest();
+            return Ok();
+        }
     }
 }
