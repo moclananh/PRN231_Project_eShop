@@ -5,7 +5,7 @@
 }
 
 <ul class="breadcrumb">
-    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+    <li><a href="/">Home</a> <span class="divider">/</span></li>
     <li class="active">Registration</li>
 </ul>
 <h3> Registration</h3>
@@ -23,64 +23,73 @@
         <button type="button" class="close" data-dismiss="alert">×</button>
         <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
      </div> -->
-    <form asp-action="Register" asp-controller="Account" method="post" class="form-horizontal">
+    <form asp-action="Register" asp-controller="Account" method="post" class="form-horizontal" onsubmit="return checkAllData()">
         <h4>Your personal information</h4>
-       @* <div asp-validation-summary="All" class="text-error">
-            <button type="button" class="close" data-dismiss="alert">×</button>
+        @* <div asp-validation-summary="All" class="text-error">
+        <button type="button" class="close" data-dismiss="alert">×</button>
         </div>*@
         <div class="control-group">
             <label class="control-label" for="inputFname1">First name <sup>*</sup></label>
             <div class="controls">
-                <input type="text" asp-for="FirstName" placeholder="First Name">
-                <span asp-validation-for="FirstName" class="text-error"></span>
+                <input type="text" asp-for="FirstName" placeholder="First Name" style="height: 36px" id="txtFirstname">
+                <span class="text-error" id="txtFirstnameMessage"></span>
+
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="inputLnam">Last name <sup>*</sup></label>
             <div class="controls">
-                <input type="text" asp-for="LastName" placeholder="Last Name">
+                <input type="text" asp-for="LastName" placeholder="Last Name" style="height: 36px" id="txtLastname">
+                <span class="text-error" id="txtLastnameMessage"></span>
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="input_email">Date <sup>*</sup></label>
             <div class="controls">
-                <input type="date" asp-for="Dob" placeholder="Email">
+                <input type="date" asp-for="Dob" placeholder="Email" style="height: 36px" id="txtDate">
+                <span class="text-error" id="txtDateMessage"></span>
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="input_email">Email <sup>*</sup></label>
             <div class="controls">
-                <input type="email" asp-for="Email" placeholder="Email">
+                <input type="email" asp-for="Email" placeholder="Email" style="height: 36px" id="txtEmail">
+                <span class="text-error" id="txtEmailMessage"></span>
                 <span asp-validation-for="Email" class="text-error"></span>
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="inputPassword1">User Name <sup>*</sup></label>
             <div class="controls">
-                <input type="text" asp-for="UserName" placeholder="User Name">
+                <input type="text" asp-for="UserName" placeholder="User Name" style="height: 36px" id="txtUsername">
+                <span class="text-error" id="txtUsernameMessage"></span>
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="inputPassword1">Password <sup>*</sup></label>
             <div class="controls">
-                <input type="password" asp-for="Password" placeholder="Password">
+                <input type="password" asp-for="Password" placeholder="Password" style="height: 36px" id="txtPassword1">
+                <span class="text-error" id="txtPassword1Message"></span>
+                <span class="text-error" id="txtPassword1ver02Message"></span>
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="inputPassword1">Confirm Password <sup>*</sup></label>
             <div class="controls">
-                <input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password">
+                <input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" style="height: 36px" id="txtPassword2">
+                <span class="text-error" id="txtPassword2Message"></span>
             </div>
         </div>
 
         <div class="control-group">
             <label class="control-label" for="mobile">Mobile Phone </label>
             <div class="controls">
-                <input type="text" asp-for="PhoneNumber" placeholder="Mobile Phone" />
+                <input type="text" asp-for="PhoneNumber" placeholder="Mobile Phone" style="height: 36px" id="txtPhone" />
+                <span class="text-error" id="txtPhoneMessage"></span>
             </div>
         </div>
 
-     
+
 
         <div class="control-group">
             <div class="controls">
@@ -91,3 +100,113 @@
         </div>
     </form>
 </div>
+
+<script>
+    // Phong cách bắt lỗi từng cái
+
+    var patt_phone = /^0[1-9]\d{8,10}$/;
+    var pattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*\W).{8,30}$/;
+
+
+    function checkFirstname() {
+        tk1 = document.getElementById("txtFirstname").value;
+        document.getElementById("txtFirstnameMessage").innerHTML =
+            tk1.trim() == "" ? "First name can't be empty" : "";
+        return tk1 != "" ? true : false;
+    }
+
+    function checkLastname() {
+        tk2 = document.getElementById("txtLastname").value;
+        document.getElementById("txtLastnameMessage").innerHTML =
+            tk2.trim() == "" ? "Last name can't be empty" : "";
+        return tk2 != "" ? true : false;
+    }
+
+    function checkUsername() {
+        tk3 = document.getElementById("txtUsername").value;
+        document.getElementById("txtUsernameMessage").innerHTML =
+            tk3.trim() == "" ? "Username can't be empty" : "";
+        return tk3 != "" ? true : false;
+    }
+
+    function checkPassword1() {
+        mk1 = document.getElementById("txtPassword1").value;
+        document.getElementById("txtPassword1Message").innerHTML =
+            (mk1.length < 6 || mk1.length > 20) ?
+                "Password length must be from 6 to 20 characters" : "";
+        return mk1.length >= 6 && mk1.length <= 20;
+    }
+
+    function checkPassword1ver02() {
+        mk1 = document.getElementById("txtPassword1").value;
+        document.getElementById("txtPassword1ver02Message").innerHTML =
+            (pattern.test(mk1) == false) ?
+                "Password must be include uppercase letters, lowercase letters and number of special characters" : "";
+        return pattern.test(mk1);
+    }
+
+    function checkPassword2() {
+        mk1 = document.getElementById("txtPassword1").value;
+        mk2 = document.getElementById("txtPassword2").value;
+        document.getElementById("txtPassword2Message").innerHTML =
+            (mk1 != mk2) ?
+                "Password doesn't match" : "";
+        return mk1 == mk2;
+    }
+
+    /*  function checkEmail() {
+         email = document.getElementById("txtEmail").value;
+         document.getElementById("txtEmailMessage").innerHTML =
+             patt_email.test(email) == false ?
+                 "Email is invalid" : "";
+         return patt_email.test(email);
+     }
+     */
+
+    function checkPhone() {
+        phone = document.getElementById("txtPhone").value;
+        document.getElementById("txtPhoneMessage").innerHTML =
+            patt_phone.test(phone) == false ?
+                "Phone is invalid" : "";
+        return patt_phone.test(phone);
+    }
+
+    function validateDateInput() {
+        inputDate = document.getElementById("txtDate").value; // Lấy giá trị ngày từ input
+        var currentDate = new Date().toISOString().split('T')[0]; // Lấy ngày hiện tại
+        document.getElementById("txtDateMessage").innerHTML =
+            (inputDate > currentDate) ?
+                "Date must be not greater than current date " : "";
+        return inputDate <= currentDate;
+
+    }
+
+    function checkAllData() {
+        isValidFirstName = checkFirstname();
+        isValidLastName = checkLastname();
+        isValidUsername = checkUsername();
+        isValidPassword1 = checkPassword1();
+        isValidPassword1ver02 = checkPassword1ver02();
+        isValidPassword2 = checkPassword2();
+        isValidDate = validateDateInput();
+        isValidPhone = checkPhone();
+
+        isValid = isValidUsername &&
+            isValidPassword1 &&
+            isValidPassword2 &&
+            isValidPhone &&
+            isValidFirstName &&
+            isValidLastName &&
+            isValidPassword1ver02 &&
+            isValidDate
+            ;
+
+
+
+        return isValid;
+        // return isValid
+    }
+
+
+
+</script>

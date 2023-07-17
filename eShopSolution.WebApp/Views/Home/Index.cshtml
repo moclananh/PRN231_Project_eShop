@@ -32,8 +32,8 @@
         </div>
     </div>
 }
-    @*<div class="well well-small">
-        <h4><localize>Featured Products</localize> <small class="pull-right">200+ featured products</small></h4>
+    <div class="well well-small">
+        <h4><localize>Featured Products</localize></h4>
         <div class="row-fluid">
             <div id="featured" class="carousel slide">
                 <div class="carousel-inner">
@@ -59,7 +59,7 @@
                             @foreach (var item in featuredProducts[index])
                             {
                                 var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
-                                <li class="span3">
+                                <li class="span3" style=" width: 60%; position: relative; left: 50%; transform: translate(-50%, 7%);">
                                     <div class="thumbnail">
                                         <i class="tag"></i>
                                         <a href="@url"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px"></a>
@@ -74,11 +74,11 @@
                     </div>
                 }
             </div>
-            <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
-            <a class="right carousel-control" href="#featured" data-slide="next">›</a>
+            <a class="left carousel-control" href="#featured" data-slide="prev" style="width: 50px; height: 50px;">‹</a>
+            <a class="right carousel-control" href="#featured" data-slide="next" style="width: 50px; height: 50px;">›</a>
         </div>
     </div>
-</div>*@
+</div>
 <h4 localize-content>Latest Products</h4>
 <ul class="thumbnails">
     @foreach (var item in Model.LatestProducts)

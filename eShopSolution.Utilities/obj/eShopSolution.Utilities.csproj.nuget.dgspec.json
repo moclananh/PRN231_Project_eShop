@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {}
+    "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {}
   },
   "projects": {
-    "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+    "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "projectUniqueName": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
         "projectName": "eShopSolution.Utilities",
-        "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
-        "packagesPath": "C:\\Users\\MinhHung\\.nuget\\packages\\",
-        "outputPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\obj\\",
+        "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MinhHung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2742,19 +2742,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MinhHung\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+      "projectUniqueName": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
       "projectName": "eShopSolution.ViewModels",
-      "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
-      "packagesPath": "C:\\Users\\MinhHung\\.nuget\\packages\\",
-      "outputPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\obj\\",
+      "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MinhHung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2768,8 +2768,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-              "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj"
+            "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Data\\eShopSolution.Data.csproj"
             }
           }
         }
@@ -2809,7 +2809,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

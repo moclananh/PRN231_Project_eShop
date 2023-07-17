@@ -11772,19 +11772,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MinhHung\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.AdminApp\\eShopSolution.AdminApp.csproj",
+      "projectUniqueName": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.AdminApp\\eShopSolution.AdminApp.csproj",
       "projectName": "eShopSolution.AdminApp",
-      "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.AdminApp\\eShopSolution.AdminApp.csproj",
-      "packagesPath": "C:\\Users\\MinhHung\\.nuget\\packages\\",
-      "outputPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.AdminApp\\obj\\",
+      "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.AdminApp\\eShopSolution.AdminApp.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.AdminApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MinhHung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11792,20 +11792,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj": {
-              "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj"
+            "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj": {
+              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj"
             },
-            "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\study\\C_Project\\PRN221\\backupProject\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "F:\\Subjects\\PRN221\\Project_Nhom_ver05\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -11868,7 +11869,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
