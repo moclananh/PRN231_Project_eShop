@@ -32,12 +32,12 @@
         </div>
     </div>
 }
-    <div class="well well-small">
-        <h4><localize>Featured Products</localize></h4>
-        <div class="row-fluid">
-            <div id="featured" class="carousel slide">
-                <div class="carousel-inner">
-                    @{
+<div class="well well-small">
+    <h4><localize>Featured Products</localize></h4>
+    <div class="row-fluid">
+        <div id="featured" class="carousel slide">
+            <div class="carousel-inner">
+                @{
                     List<List<ProductVm>> featuredProducts = new List<List<ProductVm>>();
                     List<ProductVm> featuredPart = new List<ProductVm>();
                 }
@@ -54,24 +54,24 @@
                 }
                 @for (int index = 0; index < featuredProducts.Count; index++)
                 {
-                    <div class="item @(index == 0?"active":"")">
-                        <ul class="thumbnails">
-                            @foreach (var item in featuredProducts[index])
-                            {
-                                var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
-                                <li class="span3" style=" width: 60%; position: relative; left: 50%; transform: translate(-50%, 7%);">
-                                    <div class="thumbnail">
-                                        <i class="tag"></i>
-                                        <a href="@url"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px"></a>
-                                        <div class="caption">
-                                            <h5>@item.Name</h5>
-                                            <h4><a class="btn" href="" localize-content>VIEW</a> <span class="pull-right">@item.Price.ToString()</span></h4>
-                                        </div>
-                                    </div>
-                                </li>
-                            }
-                        </ul>
-                    </div>
+
+
+                    @for (int item = 0; item < featuredProducts[index].Count; item++)
+                    {
+                        var url = $"/{culture}/{_loc["productUrl"]}/{featuredProducts[index][item].Id}";
+                        <div class="item @(item == 0?"active":"")" style="width: 60%; margin: auto">
+                            <div class="container">
+                                <i class="tag"></i>
+                                <a href="@url"><img src="@(Configuration["BaseAddress"] + featuredProducts[index][item].ThumbnailImage)" alt="@featuredProducts[index][item].Name" style="border-radius: 4px; width:512px; height: 280px; max-height: 280px !important"></a>
+                                <div class="caption">
+                                    <h5>@featuredProducts[index][item].Name</h5>
+                                    <h4><a class="btn" href="@url" localize-content>VIEW</a> <span class="pull-right">@featuredProducts[index][item].Price.ToString()</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
                 }
             </div>
             <a class="left carousel-control" href="#featured" data-slide="prev" style="width: 50px; height: 50px;">‹</a>
@@ -86,7 +86,7 @@
         var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
         <li class="span3">
             <div class="thumbnail">
-                <a href="@url"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px"/></a>
+                <a href="@url"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px; height: 260px !important; object-fit: cover" /></a>
                 <div class="caption">
                     <h5>@item.Name</h5>
                     <p>

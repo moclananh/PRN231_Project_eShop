@@ -28,7 +28,7 @@
     <!-- Google-code-prettify -->
     <link href="/themes/js/google-code-prettify/prettify.css" rel="stylesheet" />
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="/themes/images/ico/favicon.ico">
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/flowershop-339a3.appspot.com/o/logo-color.png?alt=media&token=a78cec4a-59d4-4803-96fe-9ead9a2a86de">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/themes/images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/themes/images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/themes/images/ico/apple-touch-icon-72-precomposed.png">
@@ -46,7 +46,7 @@
             <div id="welcomeLine" class="row" style="flex-wrap: nowrap !important">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <a asp-action="Details" asp-controller="User"  class="span6">Welcome!<strong> @User.Identity.Name</strong></a>
+                    <a asp-action="Details" asp-controller="User" class="span6">Welcome!<strong> @User.Identity.Name</strong></a>
                 }
                 else
                 {
@@ -74,9 +74,9 @@
                     <span class="icon-bar"></span>
                 </a>
                 <div class="navbar-inner" style="background-color:lightpink; background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,112,0.3) 35%, rgba(0,212,255,1) 100%); display: flex; align-items:center">
-                    <a class="brand" href="/"><img src="/themes/images/logo.png" alt="Bootsshop" style="width:100px"/></a>
+                    <a class="brand" href="/"><img src="/themes/images/logo.png" alt="Bootsshop" style="width:100px" /></a>
                     <form class="form-inline navbar-search" method="post" action="products.html">
-                        <input id="srchFld" class="srchTxt" type="text" style="height:30px; border-radius: 16px; margin-right: 8px"/>
+                        <input id="srchFld" class="srchTxt" type="text" style="height:30px; border-radius: 16px; margin-right: 8px" />
                         <select class="srchTxt" style="border-radius: 16px; padding: 3px; margin-right: 8px">
                             <option>All</option>
                             <option>Love Flower </option>
@@ -119,7 +119,7 @@
                 <!-- Sidebar ================================================== -->
                 @await Component.InvokeAsync("SideBar")
                 <!-- Sidebar end=============================================== -->
-                <div class="span9">
+                <div class="">
                     @RenderBody()
                 </div>
             </div>
@@ -146,8 +146,8 @@
 
             <!-- Copyright -->
             <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © Happiness radiates like the fragrance from a flower and draws all good things towards you.
-               
+                Â© Happiness radiates like the fragrance from a flower and draws all good things towards you.
+
             </div>
             <!-- Copyright -->
         </footer>

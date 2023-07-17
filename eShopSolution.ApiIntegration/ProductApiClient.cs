@@ -60,6 +60,7 @@ namespace eShopSolution.ApiIntegration
             requestContent.Add(new StringContent(request.Price.ToString()), "price");
             requestContent.Add(new StringContent(request.OriginalPrice.ToString()), "originalPrice");
             requestContent.Add(new StringContent(request.Stock.ToString()), "stock");
+            requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Name) ? "" : request.Name.ToString()), "name");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Description) ? "" : request.Description.ToString()), "description");
 
@@ -100,7 +101,7 @@ namespace eShopSolution.ApiIntegration
             }
 
             //requestContent.Add(new StringContent(request.Id.ToString()), "id");
-
+            requestContent.Add(new StringContent(request.IsFeatured.ToString()), "isFeatured");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Name) ? "" : request.Name.ToString()), "name");
             requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Description) ? "" : request.Description.ToString()), "description");
 

@@ -95,6 +95,7 @@ namespace eShopSolution.Application.Catalog.Products
                 Stock = request.Stock,
                 ViewCount = 0,
                 DateCreated = DateTime.Now,
+                IsFeatured = request.IsFeatured,
                 ProductTranslations = translations
             };
             //Save image
@@ -176,6 +177,7 @@ namespace eShopSolution.Application.Catalog.Products
                     SeoTitle = x.pt.SeoTitle,
                     Stock = x.p.Stock,
                     ViewCount = x.p.ViewCount,
+                    IsFeatured = x.p.IsFeatured,
                     ThumbnailImage = x.pi.ImagePath
                 }).ToListAsync();
 
@@ -220,6 +222,7 @@ namespace eShopSolution.Application.Catalog.Products
                 Stock = product.Stock,
                 ViewCount = product.ViewCount,
                 Categories = categories,
+                IsFeatured = product.IsFeatured,
                 ThumbnailImage = image != null ? image.ImagePath : "no-image.jpg"
             };
             return productViewModel;
@@ -284,6 +287,7 @@ namespace eShopSolution.Application.Catalog.Products
             productTranslations.SeoTitle = request.SeoTitle;
             productTranslations.Description = request.Description;
             productTranslations.Details = request.Details;
+            product.IsFeatured = request.IsFeatured;
 
             //Save image
             if (request.ThumbnailImage != null)
@@ -372,6 +376,7 @@ namespace eShopSolution.Application.Catalog.Products
                     SeoDescription = x.pt.SeoDescription,
                     SeoTitle = x.pt.SeoTitle,
                     Stock = x.p.Stock,
+                    IsFeatured = x.p.IsFeatured,
                     ViewCount = x.p.ViewCount
                 }).ToListAsync();
 
@@ -446,6 +451,7 @@ namespace eShopSolution.Application.Catalog.Products
                     SeoTitle = x.pt.SeoTitle,
                     Stock = x.p.Stock,
                     ViewCount = x.p.ViewCount,
+                    IsFeatured = x.p.IsFeatured,
                     ThumbnailImage = x.pi.ImagePath
                 }).ToListAsync();
 
@@ -482,6 +488,7 @@ namespace eShopSolution.Application.Catalog.Products
                     SeoTitle = x.pt.SeoTitle,
                     Stock = x.p.Stock,
                     ViewCount = x.p.ViewCount,
+                    IsFeatured = x.p.IsFeatured,
                     ThumbnailImage = x.pi.ImagePath
                 }).ToListAsync();
 
