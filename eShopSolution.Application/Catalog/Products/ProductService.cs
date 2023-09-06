@@ -335,13 +335,13 @@ namespace eShopSolution.Application.Catalog.Products
             return await _context.SaveChangesAsync() > 0;
         }
 
-        private async Task<string> SaveFile(IFormFile file)
-        {
-            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            await _storageService.SaveFileAsync(file.OpenReadStream(), fileName);
-            return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
-        }
+            private async Task<string> SaveFile(IFormFile file)
+            {
+                var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
+                await _storageService.SaveFileAsync(file.OpenReadStream(), fileName);
+                return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
+            }
 
         public async Task<PagedResult<ProductVm>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request)
         {

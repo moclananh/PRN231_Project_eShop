@@ -10940,7 +10940,6 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.0.0",
       "eShopSolution.Application >= 1.0.0",
-      "eShopSolution.Data >= 1.0.0",
       "eShopSolution.Utilities >= 1.0.0",
       "eShopSolution.ViewModels >= 1.0.0"
     ]
@@ -10980,9 +10979,6 @@
           "projectReferences": {
             "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Application\\eShopSolution.Application.csproj": {
               "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Application\\eShopSolution.Application.csproj"
-            },
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj"
             },
             "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
               "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"

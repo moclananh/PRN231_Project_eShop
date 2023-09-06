@@ -1,0 +1,3 @@
+Bảng trên git bị lỗi nhưng có chat signalR
+Bnagr trong máy là bản chạy full chức năng nhưng k có chat
+Coi lại phát triển phần lập trình parrallel, hiện tại đang hiểu nhầm về nó.
