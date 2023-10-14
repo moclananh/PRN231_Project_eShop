@@ -2793,11 +2793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Application\\eShopSolution.Application.csproj",
+      "projectUniqueName": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Application\\eShopSolution.Application.csproj",
       "projectName": "eShopSolution.Application",
-      "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Application\\eShopSolution.Application.csproj",
+      "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Application\\eShopSolution.Application.csproj",
       "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Application\\obj\\",
+      "outputPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2819,14 +2819,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Data\\eShopSolution.Data.csproj"
+            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Data\\eShopSolution.Data.csproj"
             },
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }

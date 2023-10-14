@@ -3,6 +3,7 @@ using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.Utilities.Exceptions;
+using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.ProductImages;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
@@ -15,6 +16,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace eShopSolution.Application.Catalog.Products
 {
@@ -134,10 +136,8 @@ namespace eShopSolution.Application.Catalog.Products
 
             return await _context.SaveChangesAsync();
         }
-
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
         {
-            //1. Select join
             var query = from p in _context.Products
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId into ppic
@@ -147,41 +147,55 @@ namespace eShopSolution.Application.Catalog.Products
                         join pi in _context.ProductImages on p.Id equals pi.ProductId into ppi
                         from pi in ppi.DefaultIfEmpty()
                         where pt.LanguageId == request.LanguageId && pi.IsDefault == true
-                        select new { p, pt, pic, pi };
-            //2. filter
-            if (!string.IsNullOrEmpty(request.Keyword))
-                query = query.Where(x => x.pt.Name.Contains(request.Keyword));
+                        select new ProductVm()
+                        {
+                            Id = p.Id,
+                            Name = pt.Name,
+                            DateCreated = p.DateCreated,
+                            Description = pt.Description,
+                            Details = pt.Details,
+                            LanguageId = pt.LanguageId,
+                            OriginalPrice = p.OriginalPrice,
+                            Price = p.Price,
+                            SeoAlias = pt.SeoAlias,
+                            SeoDescription = pt.SeoDescription,
+                            SeoTitle = pt.SeoTitle,
+                            Stock = p.Stock,
+                            ViewCount = p.ViewCount,
+                            IsFeatured = p.IsFeatured,
+                            ThumbnailImage = pi.ImagePath,
+                            CategoryId = pic.CategoryId // Add CategoryId to ProductVm
+                        };
 
-            if (request.CategoryId != null && request.CategoryId != 0)
+            if (!string.IsNullOrEmpty(request.Keyword))
             {
-                query = query.Where(p => p.pic.CategoryId == request.CategoryId);
+                query = query.Where(x => x.Name.Contains(request.Keyword));
             }
 
-            //3. Paging
-            int totalRow = await query.CountAsync();
+            // Filter by CategoryId
+            if (request.CategoryId != null && request.CategoryId != 0)
+            {
+                query = query.Where(x => x.CategoryId == request.CategoryId);
+            }
 
-            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .Select(x => new ProductVm()
+            // Create a list to store distinct products
+            List<ProductVm> distinctProducts = new List<ProductVm>();
+
+            foreach (var productVm in query)
+            {
+                // Check if the product with the same ID is already in the distinctProducts list
+                if (!distinctProducts.Any(p => p.Id == productVm.Id) && !(productVm.Name == "N/A"))
                 {
-                    Id = x.p.Id,
-                    Name = x.pt.Name,
-                    DateCreated = x.p.DateCreated,
-                    Description = x.pt.Description,
-                    Details = x.pt.Details,
-                    LanguageId = x.pt.LanguageId,
-                    OriginalPrice = x.p.OriginalPrice,
-                    Price = x.p.Price,
-                    SeoAlias = x.pt.SeoAlias,
-                    SeoDescription = x.pt.SeoDescription,
-                    SeoTitle = x.pt.SeoTitle,
-                    Stock = x.p.Stock,
-                    ViewCount = x.p.ViewCount,
-                    IsFeatured = x.p.IsFeatured,
-                    ThumbnailImage = x.pi.ImagePath
-                }).ToListAsync();
+                    distinctProducts.Add(productVm);
+                }
+            }
+            int totalRow = distinctProducts.Count();
 
-            //4. Select and projection
+            var data = distinctProducts
+                .Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .ToList();
+
             var pagedResult = new PagedResult<ProductVm>()
             {
                 TotalRecords = totalRow,
@@ -189,6 +203,7 @@ namespace eShopSolution.Application.Catalog.Products
                 PageIndex = request.PageIndex,
                 Items = data
             };
+
             return pagedResult;
         }
 
@@ -398,11 +413,26 @@ namespace eShopSolution.Application.Catalog.Products
             {
                 return new ApiErrorResult<bool>($"Sản phẩm với id {id} không tồn tại");
             }
-            foreach (var category in request.Categories)
+
+            List<SelectItem> mang = new List<SelectItem>();
+                
+            foreach (var item in request.Categories)
+            {
+                if (item.Name != "N/A")
+                {
+                    mang.Add(item);
+                }
+                // Check if the product with the same ID is already in the distinctProducts list
+            }
+
+            foreach (var category in mang)
             {
                 var productInCategory = await _context.ProductInCategories
                     .FirstOrDefaultAsync(x => x.CategoryId == int.Parse(category.Id)
                     && x.ProductId == id);
+
+
+
                 if (productInCategory != null && category.Selected == false)
                 {
                     _context.ProductInCategories.Remove(productInCategory);

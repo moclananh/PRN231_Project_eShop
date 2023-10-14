@@ -89,6 +89,7 @@ namespace eShopSolution.AdminApp.Controllers
             return View(roleAssignRequest);
         }
 
+        //ham save danh muc
         [HttpPost]
         public async Task<IActionResult> CategoryAssign(CategoryAssignRequest request)
         {

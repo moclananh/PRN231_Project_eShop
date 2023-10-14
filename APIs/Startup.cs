@@ -1,6 +1,7 @@
 using eShopSolution.Application.Catalog.Categories;
 using eShopSolution.Application.Catalog.Products;
 using eShopSolution.Application.Common;
+using eShopSolution.Application.Sales;
 using eShopSolution.Application.System.Languages;
 using eShopSolution.Application.System.Roles;
 using eShopSolution.Application.System.Users;
@@ -63,7 +64,7 @@ namespace APIs
 
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IUserService, UserService>();
-
+            services.AddTransient<IOrderService, OrderService>();
             // DI for validation ( single validation )
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();

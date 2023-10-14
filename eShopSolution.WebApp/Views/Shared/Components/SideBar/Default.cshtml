@@ -11,24 +11,29 @@
         }
         @for (int index = 0; index < parents.Count(); index++)
         {
+          
             var parent = parents.ElementAt(index);
             var children = Model.Where(x => x.ParentId == parent.Id);
-            if (children.Any())
+            @if (parent.Name != "N/A") //Bat con bug bu vai lin
             {
-                <li class="subMenu open">
-                    <a> @parent.Name</a>
-                    <ul>
-                        @foreach (var item in children)
-                        {
-                            <li><a class="active" href="/@culture/@_loc["categoryUrl"]/@item.Id"><i class="icon-chevron-right"></i>@item.Name </a></li>
-                        }
-                    </ul>
-                </li>
+                if (children.Any())
+                {
+                    <li class="subMenu open">
+                        <a> @parent.Name</a>
+                        <ul>
+                            @foreach (var item in children)
+                            {
+                                <li><a class="active" href="/@culture/@_loc["categoryUrl"]/@item.Id"><i class="icon-chevron-right"></i>@item.Name </a></li>
+                            }
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="/@culture/@_loc["categoryUrl"]/@parent.Id">@parent.Name</a></li>
+                }
             }
-            else
-            {
-                <li><a href="/@culture/@_loc["categoryUrl"]/@parent.Id">@parent.Name</a></li>
-            }
+           
 
         }
     </ul>

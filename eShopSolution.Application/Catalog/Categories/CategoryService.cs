@@ -76,6 +76,8 @@ namespace eShopSolution.Application.Catalog.Categories
                 var category = await _context.Categories.FindAsync(request.Id);
                 var categoryTranslations = await _context.CategoryTranslations.FirstOrDefaultAsync(x => x.CategoryId == request.Id
                 && x.LanguageId == request.LanguageId);
+                
+
 
                 if (category == null || categoryTranslations == null) throw new EShopException($"Cannot find a category with id: {request.Id}");
 
@@ -135,26 +137,35 @@ namespace eShopSolution.Application.Catalog.Categories
             var query = from c in _context.Categories
                         join ct in _context.CategoryTranslations on c.Id equals ct.CategoryId
                         where ct.LanguageId == request.LanguageId
-                        select new { c, ct };
+                        select new CategoryVm()
+                        {
+                            Id = c.Id,
+                            Name = ct.Name,
+                            ParentId = c.ParentId
+                        };
 
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
-                query = query.Where(x => x.ct.Name.Contains(request.Keyword));
+                query = query.Where(x => x.Name.Contains(request.Keyword));
 
+            // Create a list to store distinct products
+            List<CategoryVm> distinctCategory = new List<CategoryVm>();
 
-            //3. Paging
-            int totalRow = await query.CountAsync();
-
-            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .Select(x => new CategoryVm()
+            foreach (var categoryVm in query)
+            {
+                // Check if the product with the same ID is already in the distinctProducts list
+                if (!distinctCategory.Any(p => p.Id == categoryVm.Id) && !(categoryVm.Name == "N/A"))
                 {
-                    Id = x.c.Id,
-                    Name = x.ct.Name,
-                   
-                }).ToListAsync();
+                    distinctCategory.Add(categoryVm);
+                }
+            }
+            int totalRow = distinctCategory.Count();
 
-            //4. Select and projection
+            var data = distinctCategory
+                .Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .ToList();
+
             var pagedResult = new PagedResult<CategoryVm>()
             {
                 TotalRecords = totalRow,

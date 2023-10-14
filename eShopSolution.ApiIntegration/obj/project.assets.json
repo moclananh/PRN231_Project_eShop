@@ -2827,11 +2827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
+      "projectUniqueName": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
       "projectName": "eShopSolution.ApiIntegration",
-      "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
+      "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj",
       "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ApiIntegration\\obj\\",
+      "outputPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ApiIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2853,11 +2853,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\FU_Hub\\SU23\\PRN221\\PROJECT\\prn221_project_estoreapplication\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
