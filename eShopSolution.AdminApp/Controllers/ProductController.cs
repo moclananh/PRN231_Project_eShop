@@ -1,7 +1,9 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using eShopSolution.ApiIntegration;
+using eShopSolution.Data.Entities;
 using eShopSolution.Utilities.Constants;
+using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.System.Products;
@@ -44,7 +46,19 @@ namespace eShopSolution.AdminApp.Controllers
             ViewBag.Keyword = keyword;
 
             var categories = await _categoryApiClient.GetAll(languageId);
-            ViewBag.Categories = categories.Select(x => new SelectListItem()
+
+            List<CategoryVm> cateDistince = new List<CategoryVm>();
+            foreach (var item in categories)
+            {
+                if (item.Name != "N/A")
+                {
+                  
+                    cateDistince.Add(item);
+                }
+            }
+
+          
+            ViewBag.Categories = cateDistince.Select(x => new SelectListItem()
             {
                 Text = x.Name,
                 Value = x.Id.ToString(),
