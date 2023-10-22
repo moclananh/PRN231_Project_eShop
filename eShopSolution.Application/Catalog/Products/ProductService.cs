@@ -483,7 +483,7 @@ namespace eShopSolution.Application.Catalog.Products
                     ViewCount = x.p.ViewCount,
                     IsFeatured = x.p.IsFeatured,
                     ThumbnailImage = x.pi.ImagePath
-                }).ToListAsync();
+                }).Where(x => x.Name != "N/A").Distinct().ToListAsync();
 
             return data;
         }
@@ -520,7 +520,7 @@ namespace eShopSolution.Application.Catalog.Products
                     ViewCount = x.p.ViewCount,
                     IsFeatured = x.p.IsFeatured,
                     ThumbnailImage = x.pi.ImagePath
-                }).ToListAsync();
+                }).Where(x => x.Name != "N/A").Distinct().ToListAsync();
 
             return data;
         }
