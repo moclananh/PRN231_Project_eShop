@@ -1,7 +1,6 @@
 ﻿var CartController = function () {
     this.initialize = function () {
         loadData();
-
         registerEvents();
     }
 
@@ -9,19 +8,30 @@
         $('body').on('click', '.btn-plus', function (e) {
             e.preventDefault();
             const id = $(this).data('id');
-            const quantity = parseInt($('#txt_quantity_' + id).val()) + 1;
+            let products = JSON.parse(localStorage.getItem('products')) || {};
+            let idToRetrieve = id;
+            let quantity = products[idToRetrieve] + 1;
+            products[id] = quantity;
+            localStorage.setItem('products', JSON.stringify(products));
             updateCart(id, quantity);
         });
 
         $('body').on('click', '.btn-minus', function (e) {
             e.preventDefault();
             const id = $(this).data('id');
-            const quantity = parseInt($('#txt_quantity_' + id).val()) - 1;
+            let products = JSON.parse(localStorage.getItem('products')) || {};
+            let idToRetrieve = id;
+            let quantity = products[idToRetrieve] - 1;
+            products[id] = quantity;
+            localStorage.setItem('products', JSON.stringify(products));
             updateCart(id, quantity);
         });
         $('body').on('click', '.btn-remove', function (e) {
             e.preventDefault();
-            const id = $(this).data('id');
+            let id = $(this).data('id');
+            let products = JSON.parse(localStorage.getItem('products')) || {};
+            delete products[id];
+            localStorage.setItem('products', JSON.stringify(products));
             updateCart(id, 0);
         });
     }
@@ -58,7 +68,10 @@
                 var total = 0;
 
                 $.each(res, function (i, item) {
-                    var amount = item.price * item.quantity;
+                    let products = JSON.parse(localStorage.getItem('products')) || {};
+                    let idToRetrieve = item.productId;
+                    let quantity = products[idToRetrieve];
+                    var amount = item.price * quantity;
                     html += "<tr>"
                         + "<td> <img width=\"60\" src=\"" + $('#hidBaseAddress').val() + item.image + "\" alt=\"\" /></td>"
                         + "<td>" + item.description + "</td>"
@@ -68,11 +81,10 @@
                         + "<button class=\"btn btn-danger btn-remove\" type=\"button\" data-id=\"" + item.productId + "\"><i class=\"icon-remove icon-white\"></i></button>"
                         + "</div>"
                         + "</td>"
-
                         + "<td>" + numberWithCommas(item.price) + "</td>"
-                        + "<td>" + numberWithCommas(amount) + "</td>"
+                        + "<td>" + numberWithCommas(quantity) + "</td>"
                         + "</tr>";
-                    total += amount;
+                    total += amount; 
                 });
                 $('#cart_body').html(html);
                 $('#lbl_number_of_items').text(res.length);

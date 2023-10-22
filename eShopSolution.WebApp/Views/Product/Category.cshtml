@@ -62,7 +62,7 @@
                             <input type="checkbox">  Adds product to compair
                         </label><br />
 
-                        <a href="product_details.html" class="btn btn-large btn-primary"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></a>
+                        <a data-id="@item.Id" href="#" class="btn btn-large btn-primary"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></a>
                         <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
                     </form>
                 </div>
@@ -86,7 +86,7 @@
                             </p>
                             <h4 style="text-align:center">
                                 <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>
-                                <a class="btn" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+                                <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
                                 <a class="btn btn-primary" href="#">@item.Price.ToString("C", culture)</a>
                             </h4>
                         </div>

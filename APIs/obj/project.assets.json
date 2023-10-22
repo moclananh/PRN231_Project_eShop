@@ -10945,24 +10945,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristino\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Downloads\\prn231_project\\prn231_project\\APIs\\APIs.csproj",
+      "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom\\APIs\\APIs.csproj",
       "projectName": "APIs",
-      "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\APIs\\APIs.csproj",
-      "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\prn231_project\\prn231_project\\APIs\\obj\\",
+      "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom\\APIs\\APIs.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom\\APIs\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10970,21 +10965,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Application\\eShopSolution.Application.csproj": {
-              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Application\\eShopSolution.Application.csproj"
+            "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+              "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.Application\\eShopSolution.Application.csproj"
             },
-            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\Downloads\\prn231_project\\prn231_project\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -11027,24 +11022,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11053,7 +11030,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
