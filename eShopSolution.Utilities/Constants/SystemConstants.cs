@@ -19,8 +19,8 @@ namespace eShopSolution.Utilities.Constants
 
         public class ProductSettings
         {
-            public const int NumberOfFeaturedProducts = 4;
-            public const int NumberOfLatestProducts = 12;
+            public const int NumberOfFeaturedProducts = 99; //stupid skip() func not understand distince. no hieu rang neu assign mutil cate thi bay nhiu product, nen skip mat cac sp cu
+            public const int NumberOfLatestProducts = 99;
         }
 
         public class ProductConstants

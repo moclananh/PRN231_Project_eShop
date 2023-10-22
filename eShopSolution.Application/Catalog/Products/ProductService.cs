@@ -465,7 +465,7 @@ namespace eShopSolution.Application.Catalog.Products
                         && p.IsFeatured == true
                         select new { p, pt, pic, pi };
 
-            var data = await query.OrderByDescending(x => x.p.DateCreated).Take(take)
+            var data = await query.OrderByDescending(x => x.p.DateCreated).Take(take) // stupid take() nen phai dung trick trong Utilities
                 .Select(x => new ProductVm()
                 {
                     Id = x.p.Id,
@@ -502,7 +502,7 @@ namespace eShopSolution.Application.Catalog.Products
                         where pt.LanguageId == languageId && (pi == null || pi.IsDefault == true)
                         select new { p, pt, pic, pi };
 
-            var data = await query.OrderByDescending(x => x.p.DateCreated).Take(take)
+            var data = await query.OrderByDescending(x => x.p.DateCreated).Take(take) // stupid take() nen phai dung trick trong Utilities
                 .Select(x => new ProductVm()
                 {
                     Id = x.p.Id,
