@@ -56,9 +56,7 @@
             <div class="control-group">
                 <label class="control-label"><span>@Model.Product.Price</span></label>
                 <div class="controls">
-                    <button class="btn btn-large btn-primary pull-right">
-                        <a class="btn btn-add-cart" data-id="@Model.Product.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
-                    </button>
+                    <a data-id="@Model.Product.Id" href="#" class="btn btn-add-cart"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></a>
                 </div>
             </div>
         </form>

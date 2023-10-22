@@ -82,3 +82,15 @@ D:\Downloads\prn231_project\prn231_project\eShopSolution.Utilities\obj\Debug\net
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll

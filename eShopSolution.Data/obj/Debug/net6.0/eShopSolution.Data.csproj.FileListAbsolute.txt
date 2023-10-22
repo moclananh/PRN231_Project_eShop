@@ -96,3 +96,17 @@ D:\Downloads\prn231_project\prn231_project\eShopSolution.Data\obj\Debug\net6.0\r
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.pdb
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.genruntimeconfig.cache
 D:\Downloads\prn231_project\prn231_project\eShopSolution.Data\obj\Debug\net6.0\ref\eShopSolution.Data.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.deps.json
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.runtimeconfig.json
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.pdb
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.csproj.AssemblyReference.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.AssemblyInfoInputs.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.AssemblyInfo.cs
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.csproj.CoreCompileInputs.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\refint\eShopSolution.Data.dll
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.pdb
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.genruntimeconfig.cache
+F:\Subjects\PRN231\Project_Nhom\eShopSolution.Data\obj\Debug\net6.0\ref\eShopSolution.Data.dll
