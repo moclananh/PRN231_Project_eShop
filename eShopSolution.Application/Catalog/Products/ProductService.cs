@@ -45,7 +45,7 @@ namespace eShopSolution.Application.Catalog.Products
 
             if (request.ImageFile != null)
             {
-                productImage.ImagePath = await this.SaveFile(request.ImageFile);
+                productImage.ImagePath = await _storageService.SaveImageAsync(request.ImageFile);
                 productImage.FileSize = request.ImageFile.Length;
             }
             _context.ProductImages.Add(productImage);
@@ -110,7 +110,7 @@ namespace eShopSolution.Application.Catalog.Products
                         Caption = "Thumbnail image",
                         DateCreated = DateTime.Now,
                         FileSize = request.ThumbnailImage.Length,
-                        ImagePath = await this.SaveFile(request.ThumbnailImage),
+                        ImagePath = await _storageService.SaveImageAsync(request.ThumbnailImage),
                         IsDefault = true,
                         SortOrder = 1
                     }
@@ -311,7 +311,7 @@ namespace eShopSolution.Application.Catalog.Products
                 if (thumbnailImage != null)
                 {
                     thumbnailImage.FileSize = request.ThumbnailImage.Length;
-                    thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
+                    thumbnailImage.ImagePath = await _storageService.SaveImageAsync(request.ThumbnailImage);
                     _context.ProductImages.Update(thumbnailImage);
                 }
             }
@@ -327,7 +327,7 @@ namespace eShopSolution.Application.Catalog.Products
 
             if (request.ImageFile != null)
             {
-                productImage.ImagePath = await this.SaveFile(request.ImageFile);
+                productImage.ImagePath = await _storageService.SaveImageAsync(request.ImageFile);
                 productImage.FileSize = request.ImageFile.Length;
             }
             _context.ProductImages.Update(productImage);
@@ -350,14 +350,14 @@ namespace eShopSolution.Application.Catalog.Products
             return await _context.SaveChangesAsync() > 0;
         }
 
-            private async Task<string> SaveFile(IFormFile file)
+         /*   private async Task<string> SaveFile(IFormFile file)
             {
                 var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
                 var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
                 await _storageService.SaveFileAsync(file.OpenReadStream(), fileName);
                 return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
             }
-
+*/
         public async Task<PagedResult<ProductVm>> GetAllByCategoryId(string languageId, GetPublicProductPagingRequest request)
         {
             //1. Select join

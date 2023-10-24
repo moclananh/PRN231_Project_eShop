@@ -19,11 +19,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -148,7 +150,21 @@ namespace APIs
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+
+            var fileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images"));
+            var requestPath = "/Images";
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = fileProvider,
+                RequestPath = requestPath
+            });
+
+            app.UseDirectoryBrowser(new DirectoryBrowserOptions
+            {
+                FileProvider = fileProvider,
+                RequestPath = requestPath
+            });
 
             app.UseAuthentication();
             app.UseRouting();

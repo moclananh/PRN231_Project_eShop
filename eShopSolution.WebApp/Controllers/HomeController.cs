@@ -1,5 +1,6 @@
-﻿using eShopSolution.ApiIntegration;
+﻿
 using eShopSolution.Utilities.Constants;
+using eShopSolution.WebApp.ApiIntegration.Interface;
 using eShopSolution.WebApp.Models;
 using LazZiya.ExpressLocalization;
 using Microsoft.AspNetCore.Http;

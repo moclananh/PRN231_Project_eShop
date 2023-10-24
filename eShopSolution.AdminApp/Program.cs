@@ -1,5 +1,6 @@
 using System;
-using eShopSolution.ApiIntegration;
+using eShopSolution.AdminApp.ApiIntegration.Interface;
+using eShopSolution.AdminApp.ApiIntegration.Services;
 using eShopSolution.ViewModels.System.Users;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -35,6 +36,7 @@ builder.Services.AddTransient<IRoleApiClient, RoleApiClient>();
 builder.Services.AddTransient<ILanguageApiClient, LanguageApiClient>();
 builder.Services.AddTransient<IProductApiClient, ProductApiClient>();
 builder.Services.AddTransient<ICategoryApiClient, CategoryApiClient>();
+builder.Services.AddTransient<ISlideApiClient, SlideApiClient>();
 builder.Services.AddRazorPages();
 
 

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using eShopSolution.ApiIntegration;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Sales;
+using eShopSolution.WebApp.ApiIntegration.Interface;
 using eShopSolution.WebApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

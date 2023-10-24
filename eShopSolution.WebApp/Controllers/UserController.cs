@@ -1,4 +1,4 @@
-﻿using eShopSolution.ApiIntegration;
+﻿
 using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -11,6 +11,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+using eShopSolution.WebApp.ApiIntegration.Interface;
 
 namespace eShopSolution.WebApp.Controllers
 {
