@@ -1,4 +1,5 @@
-﻿using eShopSolution.ApiIntegration;
+﻿
+using eShopSolution.AdminApp.ApiIntegration.Interface;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;

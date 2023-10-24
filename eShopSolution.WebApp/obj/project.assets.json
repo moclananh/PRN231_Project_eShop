@@ -2173,15 +2173,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -4036,21 +4036,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
-        }
-      },
-      "eShopSolution.ApiIntegration/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Newtonsoft.Json": "12.0.3",
-          "eShopSolution.Utilities": "1.0.0",
-          "eShopSolution.ViewModels": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/eShopSolution.ApiIntegration.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/eShopSolution.ApiIntegration.dll": {}
         }
       },
       "eShopSolution.Data/1.0.0": {
@@ -7150,14 +7135,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -7166,13 +7152,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -11451,11 +11439,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "eShopSolution.ApiIntegration/1.0.0": {
-      "type": "project",
-      "path": "../eShopSolution.ApiIntegration/eShopSolution.ApiIntegration.csproj",
-      "msbuildProject": "../eShopSolution.ApiIntegration/eShopSolution.ApiIntegration.csproj"
-    },
     "eShopSolution.Data/1.0.0": {
       "type": "project",
       "path": "../eShopSolution.Data/eShopSolution.Data.csproj",
@@ -11478,8 +11461,10 @@
       "LazZiya.TagHelpers >= 4.0.1",
       "Microsoft.IdentityModel.Tokens >= 6.15.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.15",
+      "Newtonsoft.Json >= 13.0.3",
       "System.IdentityModel.Tokens.Jwt >= 6.15.0",
-      "eShopSolution.ApiIntegration >= 1.0.0"
+      "eShopSolution.Utilities >= 1.0.0",
+      "eShopSolution.ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11489,11 +11474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+      "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
       "projectName": "eShopSolution.WebApp",
-      "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+      "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
       "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.WebApp\\obj\\",
+      "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11515,8 +11500,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj": {
-              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.ApiIntegration\\eShopSolution.ApiIntegration.csproj"
+            "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            },
+            "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -11546,6 +11534,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.15, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using eShopSolution.ApiIntegration;
+using eShopSolution.AdminApp.ApiIntegration.Interface;
 using eShopSolution.Data.Entities;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Catalog.Categories;

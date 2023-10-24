@@ -15,6 +15,7 @@ namespace eShopSolution.Utilities.Constants
             public const string Token = "Token";
             public const string ID = "ID";
             public const string BaseAddress = "BaseAddress";
+            public const string UserBaseAddress = "UserBaseAddress";
         }
 
         public class ProductSettings

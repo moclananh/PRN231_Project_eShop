@@ -1,4 +1,5 @@
-﻿using eShopSolution.ApiIntegration;
+﻿
+using eShopSolution.WebApp.ApiIntegration.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
