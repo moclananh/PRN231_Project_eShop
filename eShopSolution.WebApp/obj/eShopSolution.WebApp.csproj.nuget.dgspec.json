@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj": {}
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj": {}
   },
   "projects": {
-    "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
         "projectName": "eShopSolution.Data",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
-        "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,20 +85,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -108,20 +94,20 @@
         }
       }
     },
-    "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
         "projectName": "eShopSolution.Utilities",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
-        "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -159,20 +145,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -182,20 +154,20 @@
         }
       }
     },
-    "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
         "projectName": "eShopSolution.ViewModels",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -211,8 +183,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-                "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
               }
             }
           }
@@ -247,20 +219,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -270,20 +228,20 @@
         }
       }
     },
-    "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
         "projectName": "eShopSolution.WebApp",
-        "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
-        "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-        "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.WebApp\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.WebApp\\eShopSolution.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -299,11 +257,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-                "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
               },
-              "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-                "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Microservice\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomDaPhanTrang\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
               }
             }
           }
@@ -354,24 +312,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
