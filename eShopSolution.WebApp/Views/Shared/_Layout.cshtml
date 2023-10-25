@@ -75,14 +75,14 @@
                 </a>
                 <div class="navbar-inner" style="background-color:lightpink; background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,112,0.3) 35%, rgba(0,212,255,1) 100%); display: flex; align-items:center">
                     <a class="brand" href="/"><img src="/themes/images/logo.png" alt="Bootsshop" style="width:100px" /></a>
-                    <form class="form-inline navbar-search" method="post" action="products.html">
-                        <input id="srchFld" class="srchTxt" type="text" style="height:30px; border-radius: 16px; margin-right: 8px" />
-                        <select class="srchTxt" style="border-radius: 16px; padding: 3px; margin-right: 8px">
+                    <form class="form-inline navbar-search" method="post" asp-controller="Home" asp-action="Index">
+                        <input id="srchFld" name="keyword" class="srchTxt" type="text" style="height: 30px; border-radius: 16px; margin-right: 8px" />
+                        <select name="categoryId" class="srchTxt" style="border-radius: 16px; padding: 3px; margin-right: 8px" asp-items="@ViewBag.Categories">
                             <option>All</option>
-                            <option>Love Flower </option>
-                            <option>Congratulation Flower </option>
-                            <option>Condolence Flower </option>
-                            <option>Birthday Flower </option>
+                            @* <option>Love Flower</option>
+                            <option>Congratulation Flower</option>
+                            <option>Condolence Flower</option>
+                            <option>Birthday Flower</option>*@
                         </select>
                         <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
                     </form>
