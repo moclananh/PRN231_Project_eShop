@@ -152,3 +152,17 @@ D:\2023\FA23\PRN231\ProjectNhomDaPhanTrang\prn231_project_eshop\eShopSolution.Da
 D:\2023\FA23\PRN231\ProjectNhomDaPhanTrang\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.pdb
 D:\2023\FA23\PRN231\ProjectNhomDaPhanTrang\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.genruntimeconfig.cache
 D:\2023\FA23\PRN231\ProjectNhomDaPhanTrang\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\ref\eShopSolution.Data.dll
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.deps.json
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.runtimeconfig.json
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.dll
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\bin\Debug\net6.0\eShopSolution.Data.pdb
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.csproj.AssemblyReference.cache
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.AssemblyInfoInputs.cache
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.AssemblyInfo.cs
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.csproj.CoreCompileInputs.cache
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.dll
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\refint\eShopSolution.Data.dll
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.pdb
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\eShopSolution.Data.genruntimeconfig.cache
+D:\Study\PRN231\Project\prn231_project_eshop\eShopSolution.Data\obj\Debug\net6.0\ref\eShopSolution.Data.dll

@@ -7,7 +7,7 @@ namespace eShopSolution.ViewModels.Sales
     public class CheckoutRequest
     {
         //Them id de tìm user
-        public Guid Id { get; set; }
+        public Guid UserId { get; set; }
 
         public string Name { get; set; }
 
