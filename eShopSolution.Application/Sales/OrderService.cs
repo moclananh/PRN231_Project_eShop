@@ -3,6 +3,7 @@ using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
 using eShopSolution.Utilities.Constants;
+using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Sales;
 using Microsoft.EntityFrameworkCore;
@@ -32,62 +33,97 @@ namespace eShopSolution.Application.Sales
             var order = new Order()
             {
                 OrderDate = DateTime.Now,
-                UserId = request.Id,
+                UserId = request.UserId,
                 ShipName = request.Name,
                 ShipAddress = request.Address,
                 ShipEmail = request.Email,
                 ShipPhoneNumber = request.PhoneNumber,
                 Status = OrderStatus.InProgress,
-                OrderDetails = new List<OrderDetail>()
-                {
-                    new OrderDetail()
-                    {
-                       //ProductId = request.OrderDeta,
-                       Quantity = 10,
-                       Price = 23
-                    }
-                }
+                OrderDetails = new List<OrderDetail>() { }
+
             };
+
+            foreach (var orderDetailVm in request.OrderDetails)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == orderDetailVm.ProductId);
+
+                if (product != null)
+                {
+                    var orderDetail = new OrderDetail()
+                    {
+                        ProductId = product.Id,
+                        Quantity = orderDetailVm.Quantity,
+                        Price = product.Price * orderDetailVm.Quantity  // Set the price based on the product's price
+                    };
+
+                    order.OrderDetails.Add(orderDetail);
+                }
+                else
+                {
+                    throw new Exception($"Product with ID {orderDetailVm.ProductId} not found.");
+                }
+            }
+
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             return order;
         }
-        /*
-                public async Task<ProductVm> GetById(int productId, string languageId)
-                {
-                    var product = await _context.Orders.FindAsync(productId);
-                    var categories = await (from c in _context.Categories
-                                            join ct in _context.CategoryTranslations on c.Id equals ct.CategoryId
-                                            join pic in _context.ProductInCategories on c.Id equals pic.CategoryId
-                                            where pic.ProductId == productId && ct.LanguageId == languageId
-                                            select ct.Name).ToListAsync();
 
-                    var image = await _context.ProductImages.Where(x => x.ProductId == productId && x.IsDefault == true).FirstOrDefaultAsync();
 
-                    var order = new CheckoutRequest()
-                    {
-                        Name = product.ShipName,
-                        Address = DateTime.Now,
-                        UserId = request.Id,
-                        ShipName = request.Name,
-                        ShipAddress = request.Address,
-                        ShipEmail = request.Email,
-                        ShipPhoneNumber = request.PhoneNumber,
-                        Status = OrderStatus.InProgress,
-                    };
 
-                    var productViewModel = new CheckoutRequest()
-                    {
-                        Id = product.Id,
-                        OrderDate = product.OrderDate,
-
-                    };
-                    return productViewModel;
-                }
-        */
-        Task<CheckoutRequest> IOrderService.GetById(int Id, string languageId)
+        public async Task<int> Create2(CheckoutRequest request)
         {
-            throw new NotImplementedException();
+            var order = new Order()
+            {
+                OrderDate = DateTime.Now,
+                UserId = request.UserId,
+                ShipName = request.Name,
+                ShipAddress = request.Address,
+                ShipEmail = request.Email,
+                ShipPhoneNumber = request.PhoneNumber,
+                Status = OrderStatus.InProgress,
+                OrderDetails = new List<OrderDetail>() { }
+
+            };
+
+            foreach (var orderDetailVm in request.OrderDetails)
+            {
+                var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == orderDetailVm.ProductId);
+
+                if (product != null)
+                {
+                    var orderDetail = new OrderDetail()
+                    {
+                        ProductId = product.Id,
+                        Quantity = orderDetailVm.Quantity,
+                        Price = product.Price * orderDetailVm.Quantity  // Set the price based on the product's price
+                    };
+
+                    order.OrderDetails.Add(orderDetail);
+                }
+                else
+                {
+                    throw new Exception($"Product with ID {orderDetailVm.ProductId} not found.");
+                }
+            }
+
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
+            return order.Id;
         }
+
+        public async Task<Order> GetById(int orderId)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+
+            if (order == null)
+            {
+                throw new Exception($"Order with ID {orderId} not found.");
+            }
+
+            return order;
+        }
+
+
     }
 }

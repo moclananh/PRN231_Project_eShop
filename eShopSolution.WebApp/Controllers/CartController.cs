@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Sales;
@@ -15,10 +16,12 @@ namespace eShopSolution.WebApp.Controllers
     public class CartController : Controller
     {
         private readonly IProductApiClient _productApiClient;
+        private readonly IOrderApiClient _orderApiClient;
 
-        public CartController(IProductApiClient productApiClient)
+        public CartController(IProductApiClient productApiClient, IOrderApiClient orderApiClient)
         {
             _productApiClient = productApiClient;
+            _orderApiClient = orderApiClient;
         }
 
         public IActionResult Index()
@@ -32,8 +35,15 @@ namespace eShopSolution.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Checkout(CheckoutViewModel request)
+        public async Task<IActionResult> Checkout(CheckoutViewModel request)
         {
+            var id = Guid.Parse("37c3174b-aff4-433a-7806-08db739b0cc1");
+            var userId = User.FindFirstValue(ClaimTypes.Dsa);
+            if (userId != null)
+            {
+                id = Guid.Parse(userId);
+            }
+
             var model = GetCheckoutViewModel();
             var orderDetails = new List<OrderDetailVm>();
             foreach (var item in model.CartItems)
@@ -46,6 +56,7 @@ namespace eShopSolution.WebApp.Controllers
             }
             var checkoutRequest = new CheckoutRequest()
             {
+                UserId = id,
                 Address = request.CheckoutModel.Address,
                 Name = request.CheckoutModel.Name,
                 Email = request.CheckoutModel.Email,
@@ -53,6 +64,11 @@ namespace eShopSolution.WebApp.Controllers
                 OrderDetails = orderDetails
             };
 
+            var result = await _orderApiClient.Create(checkoutRequest);
+            if (result == null)
+            {
+                return BadRequest();
+            }
 
             RemoveAllCart();
             //TODO: Add to API

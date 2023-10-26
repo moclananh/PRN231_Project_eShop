@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace UserAPIs.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase
@@ -19,8 +20,7 @@ namespace UserAPIs.Controllers
 
         [HttpPost]
 
-
-        public async Task<IActionResult> Create(CheckoutRequest request)
+        public async Task<IActionResult> Create([FromBody] CheckoutRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -35,7 +35,21 @@ namespace UserAPIs.Controllers
             // var product = await _orderService.GetById(productId, request.LanguageId);
 
 
-            return Ok();
+            return Ok(request);
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetOrder(int id)
+        {
+            var order = await _orderService.GetById(id);
+
+            if (order == null)
+            {
+                return NotFound(); // Return 404 Not Found if the order with the given ID is not found.
+            }
+
+            return Ok(order); // Return the order with a 200 OK status code.
         }
     }
 }

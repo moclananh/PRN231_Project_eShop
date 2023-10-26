@@ -1,4 +1,5 @@
 ﻿using eShopSolution.Data.Entities;
+using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Sales;
 using System;
@@ -13,6 +14,7 @@ namespace eShopSolution.Application.Sales
     {
         Task<Order> Create(CheckoutRequest request);
 
-        Task<CheckoutRequest> GetById(int Id, string languageId);
+        Task<Order> GetById(int id);
+        Task<int> Create2(CheckoutRequest request);
     }
 }
