@@ -47,10 +47,15 @@
                 @if (User.Identity.IsAuthenticated)
                 {
                     <a asp-action="Details" asp-controller="User" class="span6">Welcome!<strong> @User.Identity.Name</strong></a>
+                    <a asp-action="GetBillHistory" asp-controller="Order" class="btn btn-primary">Bill History</a>
                 }
                 else
                 {
                     <div class="span6">Welcome!<strong> Guest!</strong></div>
+                    <form method="get" action="/@culture/Order/SearchBillById">
+                        <input type="text" name="id" placeholder="Enter ID" />
+                        <button type="submit">Search</button>
+                    </form>
                 }
                 <div class="span6">
                     <div class="pull-right">

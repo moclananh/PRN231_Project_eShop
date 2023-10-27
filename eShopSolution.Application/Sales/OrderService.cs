@@ -4,6 +4,7 @@ using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Catalog.Categories;
+using eShopSolution.ViewModels.Catalog.Orders;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.Sales;
@@ -193,6 +194,84 @@ namespace eShopSolution.Application.Sales
                 Items = data
             };
             return pagedResult;
+        }
+        public async Task<BillHistoryDetailVM> GetBillById(int id)
+        {
+            var result = new BillHistoryDetailVM();
+
+            var query = await (from o in _context.Orders
+                               join a in _context.AppUsers on o.UserId equals a.Id
+                               join od in _context.OrderDetails on o.Id equals od.OrderId
+                               join p in _context.Products on od.ProductId equals p.Id
+                               join pt in _context.ProductTranslations on p.Id equals pt.ProductId
+                               where o.Id == id
+                               select new
+                               {
+                                   ID = o.Id,
+                                   Name = pt.Name,
+                                   Quantity = od.Quantity,
+                                   Price = p.Price,
+                                   Status = o.Status
+                               }).ToListAsync();
+
+            // Filter out entries with Name = "N/A"
+            query = query.Where(item => item.Name != "N/A").ToList();
+
+            if (query.Any())
+            {
+                result.ID = query.First().ID;
+                result.status = query.First().Status;
+
+                // Populate the lists
+                result.name = query.Select(item => item.Name).ToList();
+                result.quantity = query.Select(item => item.Quantity).ToList();
+                result.price = query.Select(item => item.Price).ToList();
+            }
+
+            return result;
+        }
+
+
+
+
+
+
+        public async Task<List<BillHistoryVM>> BillHistory(Guid id)
+        {
+            var user = await _context.AppUsers.FindAsync(id);
+            var result = new List<BillHistoryVM>();
+
+            var query = await (from o in _context.Orders
+                               join a in _context.AppUsers on o.UserId equals a.Id
+                               join od in _context.OrderDetails on o.Id equals od.OrderId
+                               join p in _context.Products on od.ProductId equals p.Id
+                               where o.UserId == id
+                               select new BillHistoryVM
+                               {
+                                   id = o.Id,
+                                   email = a.Email,
+                                   address = o.ShipAddress,
+                                   orderDate = o.OrderDate,
+                                   price = od.Price,
+                                   Status = o.Status
+                               }).ToListAsync();
+
+            // Group the results by id and calculate the sum of price
+            var groupedQuery = query
+                .GroupBy(item => item.id)
+                .Select(group => new BillHistoryVM
+                {
+                    id = group.Key,
+                    email = group.First().email,
+                    address = group.First().address,
+                    orderDate = group.First().orderDate,
+                    price = group.Sum(item => item.price),
+                    Status = group.First().Status
+                }).ToList();
+
+            result.AddRange(groupedQuery);
+
+            return result;
         }
     }
 }

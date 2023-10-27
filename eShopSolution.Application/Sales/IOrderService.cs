@@ -1,5 +1,6 @@
 ﻿using eShopSolution.Data.Entities;
 using eShopSolution.ViewModels.Catalog.Categories;
+using eShopSolution.ViewModels.Catalog.Orders;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.Sales;
@@ -21,5 +22,7 @@ namespace eShopSolution.Application.Sales
 
         Task<PagedResult<OrderVm>> GetAllPaging(OrderPagingRequest request);
         Task<PagedResult<OrderDetailView>> GetOrderDetailPagingRequest(OrderDetailPagingRequest request);
+        Task<BillHistoryDetailVM> GetBillById(int id);
+        Task<List<BillHistoryVM>> BillHistory(Guid id);
     }
 }

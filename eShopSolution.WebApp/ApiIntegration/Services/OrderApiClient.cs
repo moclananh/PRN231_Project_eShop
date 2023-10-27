@@ -14,6 +14,8 @@ using eShopSolution.WebApp.ApiIntegration.Interface;
 using eShopSolution.ViewModels.Catalog.Products;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using eShopSolution.ViewModels.Catalog.Orders;
+using System.Collections.Generic;
 
 namespace eShopSolution.WebApp.ApiIntegration.Services
 {
@@ -92,6 +94,29 @@ namespace eShopSolution.WebApp.ApiIntegration.Services
             var data = await GetAsync<Order>($"/api/Orders/GetLastestOrder");
 
             return data;
+        }
+        public async Task<BillHistoryDetailVM> BillDetail(int id)
+        {
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.UserBaseAddress]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var data = await client.GetAsync($"/api/Orders/GetBillById/{id}");
+            var result = await data.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<BillHistoryDetailVM>(result);
+        }
+
+        public async Task<List<BillHistoryVM>> GetBillHistory(Guid id)
+        {
+
+
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.UserBaseAddress]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var data = await client.GetAsync($"/api/Orders/GetBillHistory/{id}");
+            var result = await data.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<BillHistoryVM>>(result);
         }
     }
 }

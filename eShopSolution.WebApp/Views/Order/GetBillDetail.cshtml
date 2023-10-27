@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "GetBillDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using eShopSolution.ViewModels.Catalog.Orders;
+@model BillHistoryDetailVM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill Detail</title>
+</head>
+<body>
+    <h1>Bill Detail</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < Model.name.Count; i++)
+            {
+                <tr>
+                    <td>@Model.ID</td>
+                    <td>@Model.name[i]</td>
+                    <td>@Model.quantity[i]</td>
+                    <td>@Model.price[i]</td>
+                </tr>
+            }
+            <tr>
+                <td colspan="4"><strong>Total Price:</strong></td>
+                <td><strong>@ViewBag.TotalSum</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

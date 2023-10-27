@@ -154,3 +154,15 @@ D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll

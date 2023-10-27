@@ -37,7 +37,7 @@ namespace eShopSolution.WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Checkout(CheckoutViewModel request)
         {
-            var id = Guid.Parse("37c3174b-aff4-433a-7806-08db739b0cc1");
+            var id = Guid.Parse("69bd714f-9576-45ba-b5b7-f00649be00de");
             var userId = User.FindFirstValue(ClaimTypes.Dsa);
             if (userId != null)
             {
