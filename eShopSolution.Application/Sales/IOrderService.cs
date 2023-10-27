@@ -1,6 +1,7 @@
 ﻿using eShopSolution.Data.Entities;
 using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
+using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.Sales;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,10 @@ namespace eShopSolution.Application.Sales
         Task<Order> Create(CheckoutRequest request);
 
         Task<Order> GetById(int id);
-        Task<int> Create2(CheckoutRequest request);
+
+        Task<Order> GetLastestOrderId();
+
+        Task<PagedResult<OrderVm>> GetAllPaging(OrderPagingRequest request);
+        Task<PagedResult<OrderDetailView>> GetOrderDetailPagingRequest(OrderDetailPagingRequest request);
     }
 }

@@ -7,5 +7,6 @@ namespace eShopSolution.WebApp.ApiIntegration.Interface
     public interface IOrderApiClient
     {
         Task<Order> Create(CheckoutRequest request);
+        Task<Order> GetLastestOrder();
     }
 }
