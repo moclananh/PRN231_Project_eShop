@@ -11,6 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 using eShopSolution.WebApp.ApiIntegration.Interface;
+using eShopSolution.ViewModels.Catalog.Products;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace eShopSolution.WebApp.ApiIntegration.Services
 {
@@ -75,6 +78,20 @@ namespace eShopSolution.WebApp.ApiIntegration.Services
                 // Throw an exception with the error details
                 throw new Exception($"API request failed with status code {response.StatusCode}. Reason: {response.ReasonPhrase}. Response: {responseContent}");
             }
+        }
+
+        public async Task<ProductVm> GetById(int id, string languageId)
+        {
+            var data = await GetAsync<ProductVm>($"/api/products/{id}/{languageId}");
+
+            return data;
+        }
+
+        public async Task<Order> GetLastestOrder()
+        {
+            var data = await GetAsync<Order>($"/api/Orders/GetLastestOrder");
+
+            return data;
         }
     }
 }

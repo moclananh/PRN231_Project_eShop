@@ -72,7 +72,9 @@ namespace eShopSolution.WebApp.Controllers
 
             RemoveAllCart();
             //TODO: Add to API
-            TempData["SuccessMsg"] = "Order purchased successfully";
+           var Order = await _orderApiClient.GetLastestOrder();
+
+            TempData["SuccessMsg"] = "Order purchased successfully. Your Order Id is: "+ Order.Id;
             return View(model);
         }
 

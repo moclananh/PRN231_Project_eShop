@@ -6,6 +6,7 @@ namespace eShopSolution.ViewModels.Sales
 {
     public class CheckoutRequest
     {
+
         //Them id de tìm user
         public Guid UserId { get; set; }
 
@@ -16,6 +17,7 @@ namespace eShopSolution.ViewModels.Sales
         public string Email { get; set; }
 
         public string PhoneNumber { get; set; }
+
 
 
         public List<OrderDetailVm> OrderDetails { set; get; } = new List<OrderDetailVm>();

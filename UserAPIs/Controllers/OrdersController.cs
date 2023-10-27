@@ -51,5 +51,20 @@ namespace UserAPIs.Controllers
 
             return Ok(order); // Return the order with a 200 OK status code.
         }
+
+        [HttpGet("GetLastestOrder")]
+        public async Task<IActionResult> GetLastestOrder()
+        {
+            var od = await _orderService.GetLastestOrderId();
+
+            if (od == null)
+            {
+                return NotFound(); // Return 404 Not Found if the order with the given ID is not found.
+            }
+
+            return Ok(od); // Return the order with a 200 OK status code.
+        }
+
+
     }
 }

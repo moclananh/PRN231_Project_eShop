@@ -10945,23 +10945,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tt\\.nuget\\packages\\": {},
+    "C:\\Users\\Kristino\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\APIs\\APIs.csproj",
+      "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\APIs\\APIs.csproj",
       "projectName": "APIs",
-      "projectPath": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\APIs\\APIs.csproj",
-      "packagesPath": "C:\\Users\\tt\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\APIs\\obj\\",
+      "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\APIs\\APIs.csproj",
+      "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
+      "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\APIs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10977,14 +10977,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
-              "projectPath": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj"
+            "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj"
             },
-            "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\Study\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\PjFixForTienLe\\prn231_project_eshop\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -11027,6 +11027,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11035,7 +11053,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
