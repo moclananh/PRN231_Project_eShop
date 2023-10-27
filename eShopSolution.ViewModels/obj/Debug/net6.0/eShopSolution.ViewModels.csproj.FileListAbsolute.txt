@@ -184,3 +184,18 @@ D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\refint\eShopSolution.ViewModels.dll
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.pdb
 D:\FU_Hub\FA23\PRN231\Project\PjFixForTienLe\prn231_project_eshop\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\ref\eShopSolution.ViewModels.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.deps.json
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.ViewModels.pdb
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.Data.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\bin\Debug\net6.0\eShopSolution.Data.pdb
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.csproj.AssemblyReference.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.AssemblyInfoInputs.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.AssemblyInfo.cs
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.csproj.CoreCompileInputs.cache
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.csproj.CopyComplete
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\refint\eShopSolution.ViewModels.dll
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\eShopSolution.ViewModels.pdb
+D:\study\C_Project\PRN231\project_new 2\prn231_project_eshop\eShopSolution.ViewModels\obj\Debug\net6.0\ref\eShopSolution.ViewModels.dll

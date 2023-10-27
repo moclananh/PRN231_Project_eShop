@@ -1,6 +1,7 @@
 ﻿using eShopSolution.Application.Sales;
 using eShopSolution.ViewModels.Sales;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace UserAPIs.Controllers
@@ -65,6 +66,21 @@ namespace UserAPIs.Controllers
             return Ok(od); // Return the order with a 200 OK status code.
         }
 
-
+        [HttpGet("GetBillHistory/{id}")]
+        public async Task<IActionResult> GetBillHistory(Guid id)
+        {
+            var billhistory = await _orderService.BillHistory(id);
+            if (billhistory == null)
+                return BadRequest("Cannot find bill");
+            return Ok(billhistory);
+        }
+        [HttpGet("GetBillById/{id}")]
+        public async Task<IActionResult> GetBillById(int id)
+        {
+            var billhistory = await _orderService.GetBillById(id);
+            if (billhistory == null)
+                return BadRequest("Cannot find bill");
+            return Ok(billhistory);
+        }
     }
 }

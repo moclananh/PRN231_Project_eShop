@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "SearchBillById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using eShopSolution.ViewModels.Catalog.Orders;
+@model BillHistoryDetailVM
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Bill</title>
+</head>
+<body>
+    <h1>Check Bill</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Status</th>
+                <!-- Add more table headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.ID</td>
+                <td>
+                    @foreach (var productName in Model.name)
+                    {
+                        <div>@productName</div>
+                    }
+                </td>
+                <td>
+                    @foreach (var quantity in Model.quantity)
+                    {
+                        <div>@quantity</div>
+                    }
+                </td>
+                <td>
+                    @foreach (var productPrice in Model.price)
+                    {
+                        <div>@productPrice</div>
+                    }
+                </td>
+                <td>@Model.status</td>
+                <!-- Add more table cells for other properties -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
