@@ -38,6 +38,8 @@ builder.Services.AddTransient<IProductApiClient, ProductApiClient>();
 builder.Services.AddTransient<ICategoryApiClient, CategoryApiClient>();
 builder.Services.AddTransient<ISlideApiClient, SlideApiClient>();
 builder.Services.AddTransient<IOrderApiClient, OrderApiClient>();
+builder.Services.AddTransient<IStatisticalApiClient, StatisticalApiClient>();
+
 builder.Services.AddRazorPages();
 
 
