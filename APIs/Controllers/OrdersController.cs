@@ -7,6 +7,7 @@ using eShopSolution.Application.Sales;
 using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
 using eShopSolution.ViewModels.Sales;
+using eShopSolution.ViewModels.Statistical;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -57,5 +58,7 @@ namespace APIs.Controllers
             var categories = await _orderService.GetOrderDetailPagingRequest(request);
             return Ok(categories);
         }
+
+       
     }
 }

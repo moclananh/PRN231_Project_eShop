@@ -10,6 +10,6 @@ namespace eShopSolution.ViewModels.Sales
     public class OrderDetailPagingRequest : PagingRequestBase
     {
         public int OrderId { get; set; }
-        public string LanguageId { get; set; }
+       // public string LanguageId { get; set; }
     }
 }

@@ -25,13 +25,13 @@ namespace eShopSolution.AdminApp.Controllers
 
         public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 10)
         {
-           
+
             var request = new OrderPagingRequest()
             {
                 Keyword = keyword,
                 PageIndex = pageIndex,
                 PageSize = pageSize
-               
+
             };
             var data = await _orderApiClient.GetPagings(request);
             ViewBag.Keyword = keyword;
@@ -52,7 +52,7 @@ namespace eShopSolution.AdminApp.Controllers
                 OrderId = Id,
                 PageIndex = pageIndex,
                 PageSize = pageSize,
-                LanguageId = languageId
+                /* LanguageId = languageId*/
 
             };
             var data = await _orderApiClient.GetOrderDetailPagings(request);
@@ -64,5 +64,7 @@ namespace eShopSolution.AdminApp.Controllers
             }
             return View(data);
         }
+
+     
     }
 }

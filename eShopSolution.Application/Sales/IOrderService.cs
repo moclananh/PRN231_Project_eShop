@@ -24,5 +24,6 @@ namespace eShopSolution.Application.Sales
         Task<PagedResult<OrderDetailView>> GetOrderDetailPagingRequest(OrderDetailPagingRequest request);
         Task<BillHistoryDetailVM> GetBillById(int id);
         Task<List<BillHistoryVM>> BillHistory(Guid id);
+
     }
 }

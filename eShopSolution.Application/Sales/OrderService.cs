@@ -159,7 +159,7 @@ namespace eShopSolution.Application.Sales
                         join p in _context.Products on od.ProductId equals p.Id
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
                         join l in _context.Languages on pt.LanguageId equals l.Id
-                        where o.Id == request.OrderId && l.Id == request.LanguageId
+                        where o.Id == request.OrderId 
                         select new OrderDetailView()
                         {
                           ProductName = pt.Name,
@@ -167,21 +167,11 @@ namespace eShopSolution.Application.Sales
                           Price = od.Price
                         };
 
-            // Create a list to store distinct products
-            List<OrderDetailView> distinctOrder = new List<OrderDetailView>();
 
-            foreach (var order in query)
-            {
-                // Check if the product with the same ID is already in the distinctProducts list
-                if (!distinctOrder.Any(p => p.ProductName == "N/A"))
-                {
-                    distinctOrder.Add(order);
-                }
-            }
+            var queryFilter = query.Where(item => item.ProductName != "N/A").ToList();
+            int totalRow = queryFilter.Count();
 
-            int totalRow = distinctOrder.Count();
-
-            var data = distinctOrder
+            var data = queryFilter
                 .Skip((request.PageIndex - 1) * request.PageSize)
                 .Take(request.PageSize)
                 .ToList();
@@ -231,11 +221,6 @@ namespace eShopSolution.Application.Sales
             return result;
         }
 
-
-
-
-
-
         public async Task<List<BillHistoryVM>> BillHistory(Guid id)
         {
             var user = await _context.AppUsers.FindAsync(id);
@@ -273,5 +258,7 @@ namespace eShopSolution.Application.Sales
 
             return result;
         }
+
+    
     }
 }
