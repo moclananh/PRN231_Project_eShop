@@ -22,8 +22,7 @@
                 <form asp-action="UpdateStatus" enctype="multipart/form-data" method="post">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="OrderId" />
-
-                    *@<select asp-for="Status" class="form-control">
+                    <select asp-for="Status" class="form-control">
                         @foreach (var item in Enum.GetValues(typeof(OrderStatus)))
                         {
                             <option value="@item">@item</option>
