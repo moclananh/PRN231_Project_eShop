@@ -2,6 +2,7 @@
 using eShopSolution.Utilities.Constants;
 using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Products;
+using eShopSolution.ViewModels.Common;
 using eShopSolution.ViewModels.Sales;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -65,6 +66,36 @@ namespace eShopSolution.AdminApp.Controllers
             return View(data);
         }
 
-     
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateStatus(int id)
+        {
+            var order = await _orderApiClient.GetById(id);
+            var editVm = new UpdateStatusRequest()
+            {
+                OrderId = order.Id,
+            };
+            return View(editVm);
+        }
+
+        [HttpPost]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UpdateStatus([FromForm] UpdateStatusRequest request)
+        {
+            if (!ModelState.IsValid)
+                return View(request);
+
+            var result = await _orderApiClient.UpdateStatus(request);
+            if (result)
+            {
+                TempData["result"] = "Cập nhật trạng thái thành công";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Cập nhật trạng thái thất bại");
+            return View(request);
+        }
+
+
     }
 }
