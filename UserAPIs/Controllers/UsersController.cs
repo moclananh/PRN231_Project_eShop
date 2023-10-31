@@ -26,7 +26,8 @@ namespace UserAPIs.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await _userService.Authencate(request);
+            // Skip role verification in the service for the client controller
+            var result = await _userService.Authencate(request, verifyRole: false);
 
             if (string.IsNullOrEmpty(result.ResultObj))
             {
@@ -34,6 +35,7 @@ namespace UserAPIs.Controllers
             }
             return Ok(result);
         }
+
 
         [HttpPost]
         [AllowAnonymous]
