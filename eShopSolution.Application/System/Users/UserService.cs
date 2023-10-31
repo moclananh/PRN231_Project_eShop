@@ -33,7 +33,7 @@ namespace eShopSolution.Application.System.Users
             _config = config;
         }
 
-        public async Task<LoginRespone<string>> Authencate(LoginRequest request)
+        public async Task<LoginRespone<string>> Authencate(LoginRequest request, bool verifyRole = true)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
             if (user == null) return new LoginErrorRespone<string>("Tài khoản không tồn tại");
@@ -44,6 +44,10 @@ namespace eShopSolution.Application.System.Users
                 return new LoginErrorRespone<string>("Đăng nhập không đúng");
             }
             var roles = await _userManager.GetRolesAsync(user);
+            if (verifyRole && (roles.Count == 0 || !roles.Contains("admin")))
+            {
+                return new LoginErrorRespone<string>("Tài khoản không được phép đăng nhập");
+            }
             var claims = new[]
             {
                 new Claim(ClaimTypes.Email,user.Email),

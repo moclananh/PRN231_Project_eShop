@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace eShopSolution.ViewModels.Catalog.Products
@@ -18,7 +19,7 @@ namespace eShopSolution.ViewModels.Catalog.Products
         public string LanguageId { set; get; }
 
         public bool? IsFeatured { get; set; }
-
+        [Required]
         public IFormFile ThumbnailImage { get; set; }
     }
 }
