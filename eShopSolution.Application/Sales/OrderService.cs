@@ -3,6 +3,7 @@ using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
 using eShopSolution.Utilities.Constants;
+using eShopSolution.Utilities.Exceptions;
 using eShopSolution.ViewModels.Catalog.Categories;
 using eShopSolution.ViewModels.Catalog.Orders;
 using eShopSolution.ViewModels.Catalog.Products;
@@ -259,6 +260,19 @@ namespace eShopSolution.Application.Sales
             return result;
         }
 
-    
+        public async Task<int> UpdateStatus(UpdateStatusRequest request)
+        {
+            var orderStatus = await _context.Orders.FindAsync(request.OrderId);
+
+
+
+            if (orderStatus == null) throw new EShopException($"Cannot find an Order with id: {request.OrderId}");
+
+            orderStatus.Status = request.Status;
+
+
+            return await _context.SaveChangesAsync();
+        }
+
     }
 }

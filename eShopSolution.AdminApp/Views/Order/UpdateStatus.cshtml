@@ -1,0 +1,40 @@
+﻿@using eShopSolution.Data.Enums
+@model eShopSolution.ViewModels.Sales.UpdateStatusRequest
+
+@{
+    ViewData["Title"] = "Cập nhật trạng thái đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Cập nhật trạng thái đơn hàng</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+        <li class="breadcrumb-item active">Cập nhật trạng thái đơn hàng</li>
+    </ol>
+    <div class="card mb-4">
+        <div class="card-header">
+            <a class="btn btn-success" asp-action="Index" asp-controller="Order">Về danh sách đơn hàng</a>
+        </div>
+
+        <div class="card-body">
+            <div class="col-md-8">
+                <form asp-action="UpdateStatus" enctype="multipart/form-data" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="OrderId" />
+                    <select asp-for="Status" class="form-control">
+                        @foreach (var item in Enum.GetValues(typeof(OrderStatus)))
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </select>
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Cập nhật trạng thái" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

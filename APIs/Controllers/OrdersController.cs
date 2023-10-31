@@ -59,6 +59,32 @@ namespace APIs.Controllers
             return Ok(categories);
         }
 
-       
+
+        [HttpGet("{orderId}")]
+        public async Task<IActionResult> GetById(int orderId)
+        {
+            var product = await _orderService.GetById(orderId);
+            if (product == null)
+                return BadRequest("Cannot find Order");
+            return Ok(product);
+        }
+
+        [HttpPut("{orderId}")]
+        [Consumes("multipart/form-data")]
+        //[Authorize]
+        public async Task<IActionResult> UpdateStatus([FromRoute] int orderId, [FromForm] UpdateStatusRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            request.OrderId = orderId;
+            var affectedResult = await _orderService.UpdateStatus(request);
+            if (affectedResult == 0)
+                return BadRequest();
+            return Ok();
+        }
+
     }
 }

@@ -25,5 +25,7 @@ namespace eShopSolution.Application.Sales
         Task<BillHistoryDetailVM> GetBillById(int id);
         Task<List<BillHistoryVM>> BillHistory(Guid id);
 
+        Task<int> UpdateStatus(UpdateStatusRequest request);
+
     }
 }
