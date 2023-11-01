@@ -20,7 +20,7 @@
     </script>
 }
 <div class="container-fluid">
-    <h1 class="mt-4">Tạo mới người dùng</h1>
+    <h1 class="mt-4">Tạo mới sản phẩm</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
         <li class="breadcrumb-item active">Tạo mới sản phẩm</li>
@@ -36,22 +36,22 @@
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="Name" class="control-label"></label>
-                        <input asp-for="Name" class="form-control" />
+                        <input asp-for="Name" class="form-control" required/>
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Price" class="control-label"></label>
-                        <input asp-for="Price" type="number" class="form-control" />
+                        <input asp-for="Price" type="number" class="form-control" required/>
                         <span asp-validation-for="Price" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="OriginalPrice" class="control-label"></label>
-                        <input asp-for="OriginalPrice" type="number" class="form-control" />
+                        <input asp-for="OriginalPrice" type="number" class="form-control" required />
                         <span asp-validation-for="OriginalPrice" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Stock" class="control-label"></label>
-                        <input asp-for="Stock" type="number" class="form-control" />
+                        <input asp-for="Stock" type="number" class="form-control" required />
                         <span asp-validation-for="Stock" class="text-danger"></span>
                     </div>
 
@@ -67,22 +67,22 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="SeoDescription" class="control-label"></label>
-                        <input asp-for="SeoDescription" class="form-control" />
+                        <input asp-for="SeoDescription" class="form-control" required />
                         <span asp-validation-for="SeoDescription" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="SeoTitle" class="control-label"></label>
-                        <input asp-for="SeoTitle" class="form-control" />
+                        <input asp-for="SeoTitle" class="form-control" required />
                         <span asp-validation-for="SeoTitle" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="SeoAlias" class="control-label"></label>
-                        <input asp-for="SeoAlias" class="form-control" />
+                        <input asp-for="SeoAlias" class="form-control" required />
                         <span asp-validation-for="SeoAlias" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="ThumbnailImage" class="control-label"></label>
-                        <input asp-for="ThumbnailImage" type="file" class="form-control" />
+                        <input asp-for="ThumbnailImage" type="file" class="form-control" required />
                         <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
                     </div>
                     <div class="form-group">
@@ -94,7 +94,7 @@
                         <span asp-validation-for="IsFeatured" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Tạo mới" class="btn btn-primary" />
+                        <input type="submit" value="Tạo mới" class="btn btn-primary" required />
                     </div>
                 </form>
             </div>

@@ -12,67 +12,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Đăng nhập hệ thống</title>
-    <link href="/css/styles.css" rel="stylesheet" />
+    <title>Admin Web</title>
+    @* <link href="/css/styles.css" rel="stylesheet" />*@
+    <link href="/css/login.scss" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            background: linear-gradient(120deg,#2980b9,#8e44ad);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            background: white;
+            border-radius: 10px
+        }
+
+            .center h1 {
+                text-align: center;
+                padding: 0 0 20px 0;
+                border-bottom: 1px solid gray;
+            }
+
+            .center form {
+                padding: 0 40px;
+                box-sizing: border-box;
+            }
+
+        form .txt_field {
+            position: relative;
+            border-bottom: 2px solid gray;
+            margin: 30px 0;
+        }
+
+        .txt_field input {
+            width: 100%;
+            padding: 0 5px;
+            border: none;
+            height: 40px;
+            font-size: 16px;
+            background: none;
+            outline: none;
+        }
+
+        .txt_field label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%);
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .txt_field span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #2691d9;
+        }
+
+        .txt_field input:focus ~ label,
+        .txt_field input:valid ~ label {
+            top: -5px;
+            color: #2691d9;
+        }
+
+            .txt_field input:focus ~ label : span ::before,
+            .txt_field input:valid ~ label : span ::before {
+                width: 100%
+            }
+
+        .pass {
+            margin: -5px 0 20px 5px;
+            color: #a6a6a6;
+            cursor: pointer;
+        }
+
+            .pass:hover {
+                text-decoration: underline;
+            }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: #2691d9;
+            margin-bottom: 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #e9f4fb;
+            font-weight: 700;
+            outline: none;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                border-color: #2691d9;
+                transition: 0.5s;
+            }
+    </style>
+    <script>
+        setTimeout(function () {
+            var validationSummary = document.getElementById("validation-summary");
+            if (validationSummary) {
+                validationSummary.style.display = "none";
+            }
+        }, 3000);
+    </script>
+    <script>
+        // Phong cách bắt lỗi từng cái
+        function checkUsername() {
+            tk1 = document.getElementById("username").value;
+            document.getElementById("txtUsername").innerHTML =
+                tk1.trim() == "" ? "Username can't be empty" : "";
+            return tk1 != "" ? true : false;
+        }
+
+        function checkPassword() {
+            tk2 = document.getElementById("password").value;
+            document.getElementById("txtPassword").innerHTML =
+                tk2.trim() == "" ? "Password can't be empty" : "";
+            return tk2 != "" ? true : false;
+        }
+
+        function checkAllData() {
+            isValidUsername = checkUsername();
+            isValidPassword = checkPassword();
+            isValid = isValidUsername && isValidPassword;
+            return isValid;
+            // return isValid
+        }
+    </script>
+
+
+
+
+
 </head>
-<body class="bg-primary">
-    <div id="layoutAuthentication">
-        <div id="layoutAuthentication_content">
-            <main>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Đăng nhập</h3></div>
-                                <div class="card-body">
-                                    <form asp-action="Index" asp-controller="Login" method="post">
-
-                                        <div asp-validation-summary="All" class="text-danger"></div>
-
-                                        <div class="form-group">
-                                            <label class="small mb-1">Tài khoản</label>
-                                            <input class="form-control py-4" asp-for="UserName" type="text" placeholder="Nhập tài khoản" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="small mb-1">Mật khẩu</label>
-                                            <input class="form-control py-4" asp-for="Password" type="password" placeholder="Enter password" required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox">
-                                                <input class="custom-control-input" asp-for="RememberMe" type="checkbox" />
-                                                <label class="custom-control-label">Nhớ mật khẩu</label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="small" href="/User/ForgotPassword">Bạn quên mật khẩu?</a>
-                                            <button class="btn btn-primary" type="submit">Đăng nhập</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <div class="small">Liên hệ quản trị</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <div id="layoutAuthentication_footer">
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2019</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+<body>
+    <div class="center">
+        <h1>
+            Login
+        </h1>
+        <form asp-action="Index" asp-controller="Login" method="post" onsubmit="return checkAllData()">
+            <div class="txt_field">
+                <input id="username" asp-for="UserName" type="text" />
+                <span></span>
+                <label>UserName</label>
+            </div>
+            <span style="color:red;font-size:small" id="txtUsername"></span>
+            <div class="txt_field">
+                <input id="password" asp-for="Password" type="password" type="password" />
+                <span></span>
+                <label>Password</label>
+            </div>
+            <span style="color:red;font-size:small" id="txtPassword"></span>
+            <div style="color:red" id="validation-summary" asp-validation-summary="All" class="text-danger"></div>
+            <div class="pass">Forgot Password</div>
+            <input type="submit" value="Login" />
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

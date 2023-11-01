@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\APIs\\APIs.csproj": {}
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj": {}
   },
   "projects": {
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\APIs\\APIs.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\APIs\\APIs.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj",
         "projectName": "APIs",
-        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\APIs\\APIs.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\APIs\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,21 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\eShopSolution.Application.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\eShopSolution.Application.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj"
               },
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
               },
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
               }
             }
           }
@@ -87,21 +91,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\eShopSolution.Application.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj",
         "projectName": "eShopSolution.Application",
-        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\eShopSolution.Application.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Application\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,20 +117,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
               },
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
               },
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
               }
             }
           }
@@ -162,21 +171,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
         "projectName": "eShopSolution.Data",
-        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,6 +197,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -247,21 +261,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
         "projectName": "eShopSolution.Utilities",
-        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Utilities\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -269,6 +287,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -302,21 +321,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
         "projectName": "eShopSolution.ViewModels",
-        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.ViewModels\\obj\\",
+        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -324,14 +347,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-                "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver04\\eShopSolution.Data\\eShopSolution.Data.csproj"
+              "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+                "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
               }
             }
           }
@@ -371,7 +395,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
