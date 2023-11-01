@@ -1,6 +1,7 @@
 ﻿using eShopSolution.Application.Sales;
 using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
+using eShopSolution.ViewModels.Sales;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using System;
@@ -52,8 +53,42 @@ namespace ApplicationTest
             },
             // Add more test orders as needed
         };
-
+            var products = new List<Product>
+        {
+            new Product
+            {
+                Id = 1,
+                Price = 10.0m,
+                OriginalPrice = 9.0m,
+                Stock = 100,
+                ViewCount = 50,
+                DateCreated = DateTime.Now,
+                IsFeatured = true,
+                ProductInCategories = new List<ProductInCategory>(),
+                OrderDetails = new List<OrderDetail>(),
+                Carts = new List<Cart>(),
+                ProductTranslations = new List<ProductTranslation>(),
+                ProductImages = new List<ProductImage>()
+            },
+            new Product
+            {
+                Id = 2,
+                Price = 15.0m,
+                OriginalPrice = 12.0m,
+                Stock = 75,
+                ViewCount = 60,
+                DateCreated = DateTime.Now,
+                IsFeatured = false,
+                ProductInCategories = new List<ProductInCategory>(),
+                OrderDetails = new List<OrderDetail>(),
+                Carts = new List<Cart>(),
+                ProductTranslations = new List<ProductTranslation>(),
+                ProductImages = new List<ProductImage>()
+            },
+        // Add more mock product entries as needed
+        };
             _context.Orders.AddRange(orders);
+            _context.Products.AddRange(products);
             _context.SaveChanges();
         }
 
@@ -75,6 +110,65 @@ namespace ApplicationTest
             var orderId = 999; // Replace with an order ID that does not exist in your test data
             var exception = await Assert.ThrowsAsync<Exception>(() => _orderService.GetById(orderId));
             Assert.Equal("Order with ID 999 not found.", exception.Message);
+        }
+        [Fact]
+        public async Task Create_ValidOrder_ReturnsCreatedOrder()
+        {
+            // Arrange
+            var userId = Guid.NewGuid(); // Generate a new GUID
+            var request = new CheckoutRequest
+            {
+                UserId = userId,
+                Name = "John Doe",
+                Address = "123 Main St",
+                Email = "john@example.com",
+                PhoneNumber = "123-456-7890",
+                OrderDetails = new List<OrderDetailVm>
+        {
+            new OrderDetailVm
+            {
+                ProductId = 1, // Replace with an existing product ID in your test data
+                Quantity = 2
+            },
+            // Add more order details if needed
+        }
+            };
+
+            // Act
+            var createdOrder = await _orderService.Create(request);
+
+            // Assert
+            Assert.NotNull(createdOrder);
+            Assert.Equal(userId, createdOrder.UserId);
+            Assert.Equal("John Doe", createdOrder.ShipName);
+            Assert.Equal("123 Main St", createdOrder.ShipAddress);
+            Assert.Equal("john@example.com", createdOrder.ShipEmail);
+            Assert.Equal("123-456-7890", createdOrder.ShipPhoneNumber);
+            // Add more assertions based on your expectations
+        }
+
+
+
+
+        [Fact]
+        public async Task Create_OrderWithNonExistentProduct_ThrowsException()
+        {
+            // Arrange
+            var request = new CheckoutRequest
+            {
+                OrderDetails = new List<OrderDetailVm>
+            {
+                new OrderDetailVm
+                {
+                    ProductId = 999, // Replace with a product ID that does not exist
+                    Quantity = 1
+                }
+            },
+                // Set other valid checkout request properties
+            };
+
+            // Act and Assert
+            await Assert.ThrowsAsync<Exception>(() => _orderService.Create(request));
         }
 
         public void Dispose()
