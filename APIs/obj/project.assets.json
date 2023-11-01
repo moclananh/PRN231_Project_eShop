@@ -10945,24 +10945,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Acer\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\MinhHung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj",
+      "projectUniqueName": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\APIs\\APIs.csproj",
       "projectName": "APIs",
-      "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\APIs.csproj",
-      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\APIs\\obj\\",
+      "projectPath": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\APIs\\APIs.csproj",
+      "packagesPath": "C:\\Users\\MinhHung\\.nuget\\packages\\",
+      "outputPath": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\APIs\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\MinhHung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10970,21 +10965,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
-              "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj"
+            "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj": {
+              "projectPath": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.Application\\eShopSolution.Application.csproj"
             },
-            "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
-              "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
+            "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj": {
+              "projectPath": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj"
             },
-            "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
-              "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinal\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
+            "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj": {
+              "projectPath": "D:\\study\\C_Project\\PRN231\\project_new3\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj"
             }
           }
         }
@@ -11035,7 +11029,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
