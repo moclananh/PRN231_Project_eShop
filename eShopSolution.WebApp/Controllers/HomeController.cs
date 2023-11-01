@@ -37,7 +37,7 @@ namespace eShopSolution.WebApp.Controllers
             _categoryApiClient = categoryApiClient;
         }
 
-        public async Task<IActionResult> Index(string keyword, int? categoryId, int page = 1, int pageSize = 9)
+        public async Task<IActionResult> Index(string keyword, int? categoryId, int page = 1, int pageSize = 8)
         {
             var culture = CultureInfo.CurrentCulture.Name;
             var languageId = CultureInfo.CurrentCulture.Name;

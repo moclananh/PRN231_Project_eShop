@@ -3,42 +3,41 @@
 @{
     var culture = CultureInfo.CurrentCulture.Name;
 }
-<div id="sidebar" class="span3">
-    
-    <ul id="sideManu" class="nav nav-tabs nav-stacked" style="flex-direction: column; overflow:initial !important">
+<div id="sidebar" class="col-md-2">
+    <ul id="sideMenu" class="nav flex-column">
         @{
-            var parents = Model.Where(x => x.ParentId == null);
+            var parents = Model.Where(x => x.ParentId == null && x.Name != "N/A");
         }
-        @for (int index = 0; index < parents.Count(); index++)
+        @foreach (var parent in parents)
         {
-          
-            var parent = parents.ElementAt(index);
-            var children = Model.Where(x => x.ParentId == parent.Id);
-            @if (parent.Name != "N/A") //Bat con bug bu vai lin
-            {
-                if (children.Any())
-                {
-                    <li class="subMenu open">
-                        <a> @parent.Name</a>
-                        <ul>
-                            @foreach (var item in children)
-                            {
-                                <li><a class="active" href="/@culture/@_loc["categoryUrl"]/@item.Id"><i class="icon-chevron-right"></i>@item.Name </a></li>
-                            }
-                        </ul>
-                    </li>
-                }
-                else
-                {
-                    <li><a href="/@culture/@_loc["categoryUrl"]/@parent.Id">@parent.Name</a></li>
-                }
-            }
-           
+            var children = Model.Where(x => x.ParentId == parent.Id && x.Name != "N/A");
 
+            @if (children.Any())
+            {
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#submenu-@parent.Id">@parent.Name</a>
+                    <ul class="nav flex-column collapse" id="submenu-@parent.Id">
+                        @foreach (var item in children)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/@culture/@_loc["categoryUrl"]/@item.Id">
+                                    <i class="icon-chevron-right"></i>@item.Name
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link" href="/@culture/@_loc["categoryUrl"]/@parent.Id">@parent.Name</a>
+                </li>
+            }
         }
     </ul>
-    <br />
-    @*<div class="thumbnail">
+</div>
+@*<div class="thumbnail">
             <img src="/themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera" />
             <div class="caption">
                 <h5>Panasonic</h5>
@@ -58,4 +57,3 @@
                 <h5>Payment Methods</h5>
             </div>
         </div>*@
-</div>

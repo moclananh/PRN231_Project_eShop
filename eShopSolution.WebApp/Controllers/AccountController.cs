@@ -47,7 +47,7 @@ namespace eShopSolution.WebApp.Controllers
 
             if (result.ResultObj == null)
             {
-                ModelState.AddModelError("", "Login fail !!!");
+                ModelState.AddModelError("", "Username or password is incorrect !!!");
                 return View();
             }
             var userPrincipal = this.ValidateToken(result.ResultObj);

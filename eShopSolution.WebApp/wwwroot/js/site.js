@@ -3,6 +3,23 @@
         regsiterEvents();
         loadCart();
         loadData();
+        setHeightCard();
+    }
+
+    function setHeightCard() {
+        var maxHeight = 0;
+        for (i = 0; i < $(".thumbnails .span2 .thumbnail").length; i++) {
+            if ($(".thumbnails .span2 .thumbnail").eq(i)) {
+                var currentHeight = $(".thumbnails .span2 .thumbnail").eq(i).height();
+                if (currentHeight >= maxHeight) {
+                    maxHeight = currentHeight;
+                }
+            }
+            else {
+                break;
+            }
+        }
+        $(".thumbnails .span2 .thumbnail").height(maxHeight);
     }
     function loadCart() {
         const culture = $('#hidCulture').val();
@@ -23,7 +40,7 @@
 
             checkProductInCart(id)
                 .then(function (found) {
-                    if (found) {                
+                    if (found) {
                         let products = JSON.parse(localStorage.getItem('products')) || {};
                         let idToRetrieve = id;
                         let quantity = products[idToRetrieve] + 1;
@@ -31,7 +48,7 @@
                         localStorage.setItem('products', JSON.stringify(products));
                         updateCart(id, quantity);
                     } else {
-                        
+
                         $.ajax({
                             type: "POST",
                             url: "/" + culture + '/Cart/AddToCart',
