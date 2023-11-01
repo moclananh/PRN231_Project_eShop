@@ -11,9 +11,9 @@
     <title>Check Bill</title>
 </head>
 <body>
-    <h1>Check Bill</h1>
+    <h1 style="text-align: center; font-weight: 700">Check Bill</h1>
 
-    <table>
+    <table class="table" id="example">
         <thead>
             <tr>
                 <th>ID</th>
@@ -30,19 +30,19 @@
                 <td>
                     @foreach (var productName in Model.name)
                     {
-                        <div>@productName</div>
+                        @productName
                     }
                 </td>
                 <td>
                     @foreach (var quantity in Model.quantity)
                     {
-                        <div>@quantity</div>
+                        @quantity
                     }
                 </td>
                 <td>
                     @foreach (var productPrice in Model.price)
                     {
-                        <div>@productPrice</div>
+                        @productPrice
                     }
                 </td>
                 <td>@Model.status</td>

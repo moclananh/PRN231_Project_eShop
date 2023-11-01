@@ -10,16 +10,16 @@
     <title>Bill History</title>
 </head>
 <body>
-    <h1>Bill History</h1>
+    <h1 style="text-align: center; font-weight: 700">Bill History</h1>
 
-    <table>
+    <table class="table" id="example">
         <thead>
             <tr>
-                <th>ID || </th>
-                <th>Email || </th>
-                <th>Address || </th>
-                <th>Order Date || </th>
-                <th>Total Price || </th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Order Date</th>
+                <th>Total Price</th>
                 <th>Status</th>
                 <!-- Add more table headers as needed -->
             </tr>
@@ -28,15 +28,15 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.id || </td>
-                    <td>@item.email || </td>
-                    <td>@item.address ||</td>
-                    <td>@item.orderDate || </td>
-                    <td>@item.price || </td>
+                    <td>@item.id</td>
+                    <td>@item.email</td>
+                    <td>@item.address</td>
+                    <td>@item.orderDate</td>
+                    <td>@item.price</td>
                     <td>@item.Status</td>
                     <td>
                         <!-- Add a form with a hidden input field and a submit button -->
-                        <a asp-controller="Order" asp-action="GetBillDetail" asp-route-id="@item.id">View Details</a>
+                        <a class="btn btn-info" asp-controller="Order" asp-action="GetBillDetail" asp-route-id="@item.id">View Details</a>
                     </td>
                     <!-- Add more table cells for other properties -->
                 </tr>

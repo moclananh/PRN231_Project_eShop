@@ -11,9 +11,9 @@
     <title>Bill Detail</title>
 </head>
 <body>
-    <h1>Bill Detail</h1>
+    <h1 style="text-align:center; font-weight: 700">Bill Detail</h1>
 
-    <table>
+    <table class="table" id="example">
         <thead>
             <tr>
                 <th>ID</th>
@@ -33,7 +33,7 @@
                 </tr>
             }
             <tr>
-                <td colspan="4"><strong>Total Price:</strong></td>
+                <td colspan="3"><strong>Total Price:</strong></td>
                 <td><strong>@ViewBag.TotalSum</strong></td>
             </tr>
         </tbody>

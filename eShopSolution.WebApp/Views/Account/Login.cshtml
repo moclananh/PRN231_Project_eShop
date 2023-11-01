@@ -1,4 +1,4 @@
-﻿@using System.Globalization
+﻿﻿@using System.Globalization
 @model eShopSolution.ViewModels.System.Users.LoginRequest
 @{
     ViewData["Title"] = "Login";
@@ -29,28 +29,55 @@
     <div class="span4">
         <div class="well">
             <h5>ALREADY REGISTERED ?</h5>
-            <form action="/@culture/Account/Login" method="post">
+            <form action="/@culture/Account/Login" method="post" onsubmit="return checkAllData()">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="control-group">
                     <label class="control-label" for="inputEmail1">Email</label>
                     <div class="controls">
-                        <input class="span3" type="text" asp-for="UserName" placeholder="Email" style="height: 36px">
-                        <span asp-validation-for="UserName" class="text-error"></span>
+                        <input class="span3" type="text" asp-for="UserName" placeholder="Email" style="height: 36px" id="username">
+                        <span class="text-danger" id="txtUsername"></span>
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputPassword1">Password</label>
                     <div class="controls">
-                        <input type="password" class="span3" asp-for="Password" placeholder="Password" style="height: 36px">
-                        <span asp-validation-for="Password" class="text-error"></span>
+                        <input type="password" class="span3" asp-for="Password" placeholder="Password" style="height: 36px" id="password">
+                        <span class="text-danger d-flex" id="txtPassword"></span>
+
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="controls">
-                        <button type="submit" class="btn">Sign in</button> <a href="forgetpass.html">Forget password?</a>
+                        <button type="submit" class="btn">Sign in</button> <a href="/">Forget password?</a>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-</div>	
+</div>
+
+<script>
+    // Phong cách bắt lỗi từng cái
+    function checkUsername() {
+        tk1 = document.getElementById("username").value;
+        document.getElementById("txtUsername").innerHTML =
+            tk1.trim() == "" ? "Username can't be empty" : "";
+        return tk1 != "" ? true : false;
+    }
+
+    function checkPassword() {
+        tk2 = document.getElementById("password").value;
+        document.getElementById("txtPassword").innerHTML =
+            tk2.trim() == "" ? "Password can't be empty" : "";
+        return tk2 != "" ? true : false;
+    }
+   
+    function checkAllData() {
+        isValidUsername = checkUsername();
+        isValidPassword = checkPassword();
+        isValid = isValidUsername && isValidPassword;
+        return isValid;
+        // return isValid
+    }
+</script>
+

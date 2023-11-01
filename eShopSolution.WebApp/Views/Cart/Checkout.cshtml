@@ -27,7 +27,7 @@ else
     <table class="table table-bordered">
         <thead>
             <tr>
-                
+
                 <th>Product</th>
                 <th>Description</th>
                 <th>Quantity</th>
@@ -100,7 +100,7 @@ else
             </td>
         </tr>
     </table>
-    <a href="/" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
+    <a href="/@culture/Cart" class="btn btn-large"><i class="icon-arrow-left"></i> Continue Shopping </a>
 }
 
 <script>
@@ -116,8 +116,8 @@ else
             alert('Please fill in all fields');
             return false;
         }
-        else{
-             Model.CartItems.Clear();
+        else {
+            Model.CartItems.Clear();
         }
         return true;
     }
