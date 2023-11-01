@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Acer\\.nuget\\packages\\": {},
+    "C:\\Users\\Kristino\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomTestsauKiet\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+      "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
       "projectName": "eShopSolution.Utilities",
-      "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomTestsauKiet\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
-      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomTestsauKiet\\prn231_project_eshop\\eShopSolution.Utilities\\obj\\",
+      "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Utilities\\eShopSolution.Utilities.csproj",
+      "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
+      "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\prn231_project_eshop\\eShopSolution.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -62,6 +62,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
