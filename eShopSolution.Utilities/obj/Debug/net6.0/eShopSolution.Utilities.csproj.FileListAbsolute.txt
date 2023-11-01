@@ -214,3 +214,15 @@ D:\study\C_Project\PRN231\project_new3\prn231_project_eshop\eShopSolution.Utilit
 D:\study\C_Project\PRN231\project_new3\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\study\C_Project\PRN231\project_new3\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\study\C_Project\PRN231\project_new3\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
