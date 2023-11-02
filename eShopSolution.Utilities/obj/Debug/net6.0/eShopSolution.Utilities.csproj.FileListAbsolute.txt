@@ -226,3 +226,15 @@ D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Ut
 D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\2023\FA23\PRN231\ProjectNhomTestsauKiet\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+F:\Subjects\PRN231\Project_Nhom_ver06\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll

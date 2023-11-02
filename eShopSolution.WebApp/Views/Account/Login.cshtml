@@ -32,9 +32,9 @@
             <form action="/@culture/Account/Login" method="post" onsubmit="return checkAllData()">
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="control-group">
-                    <label class="control-label" for="inputEmail1">Email</label>
+                    <label class="control-label" for="inputEmail1">User Name</label>
                     <div class="controls">
-                        <input class="span3" type="text" asp-for="UserName" placeholder="Email" style="height: 36px" id="username">
+                        <input class="span3" type="text" asp-for="UserName" placeholder="User Name" style="height: 36px" id="username">
                         <span class="text-danger" id="txtUsername"></span>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
             tk2.trim() == "" ? "Password can't be empty" : "";
         return tk2 != "" ? true : false;
     }
-   
+
     function checkAllData() {
         isValidUsername = checkUsername();
         isValidPassword = checkPassword();
