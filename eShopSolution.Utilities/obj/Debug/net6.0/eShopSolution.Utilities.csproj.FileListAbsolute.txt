@@ -250,3 +250,15 @@ D:\Study\PRN231\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eS
 D:\Study\PRN231\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
 D:\Study\PRN231\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
 D:\Study\PRN231\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.deps.json
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.dll
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\bin\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.AssemblyReference.cache
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfoInputs.cache
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.AssemblyInfo.cs
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.csproj.CoreCompileInputs.cache
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.dll
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\refint\eShopSolution.Utilities.dll
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\eShopSolution.Utilities.pdb
+D:\FU_Hub\FA23\PRN231\Project\Test\prn231_project_eshop\eShopSolution.Utilities\obj\Debug\net6.0\ref\eShopSolution.Utilities.dll

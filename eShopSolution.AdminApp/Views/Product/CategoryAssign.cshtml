@@ -21,7 +21,7 @@
                 <input type="hidden" asp-for="Id" />
                 @for (var i = 0; i < Model.Categories.Count; i++)
                 {
-                    @if (Model.Categories[i].Name != "N/A")
+                   @* @if (Model.Categories[i].Name != "N/A")*@ // create new cat -> return 1 translation
                     {
                         <div class="form-group">
                             <label>

@@ -44,7 +44,7 @@ namespace eShopSolution.Application.Catalog.Categories
                         LanguageId = request.LanguageId
                     });
                 }
-                else
+              /*  else
                 {
                     translations.Add(new CategoryTranslation()
                     {
@@ -54,7 +54,7 @@ namespace eShopSolution.Application.Catalog.Categories
                         SeoTitle= SystemConstants.ProductConstants.NA,
                         LanguageId = language.Id
                     });
-                }
+                }*/
             }
             var category = new Category()
             {
