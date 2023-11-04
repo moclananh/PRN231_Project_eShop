@@ -2742,23 +2742,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristino\\.nuget\\packages\\": {},
+    "C:\\Users\\Acer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Test\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+      "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
       "projectName": "eShopSolution.ViewModels",
-      "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Test\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
-      "packagesPath": "C:\\Users\\Kristino\\.nuget\\packages\\",
-      "outputPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Test\\prn231_project_eshop\\eShopSolution.ViewModels\\obj\\",
+      "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.ViewModels\\eShopSolution.ViewModels.csproj",
+      "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+      "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kristino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2774,8 +2774,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\FU_Hub\\FA23\\PRN231\\Project\\Test\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
-              "projectPath": "D:\\FU_Hub\\FA23\\PRN231\\Project\\Test\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
+            "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+              "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj"
             }
           }
         }
@@ -2810,20 +2810,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
