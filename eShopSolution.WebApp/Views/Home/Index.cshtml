@@ -174,14 +174,14 @@
     <h2 localize-content style="color: #3f3f3f; font-weight: 800; text-align: center; margin-bottom: 24px"> Products</h2>
     @if (ViewBag.NotFound != null)
     {
-        <h2>@ViewBag.NotFound</h2>
+        <h2 style="padding-top:1rem;color:red">@ViewBag.NotFound</h2>
     }
     <ul class="thumbnails">
         @foreach (var item in Model.SearchProduct.Items)
         {
             if (item.Name == null)
             {
-                <li>Not Found</li>
+                <li>>Not Found</li>
             }
             var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
             <li class="span2" style="width: 207px">

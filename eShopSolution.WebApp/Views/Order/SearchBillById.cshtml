@@ -11,44 +11,53 @@
     <title>Check Bill</title>
 </head>
 <body>
+
     <h1 style="text-align: center; font-weight: 700">Check Bill</h1>
-    <table class="table" id="example">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Status</th>
-                <!-- Add more table headers as needed -->
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>@Model.ID</td>
-                <td>
-                    @foreach (var productName in Model.name)
-                    {
-                        <div style="margin-bottom: 16px">@productName</div>
-                    }
-                </td>
-                <td>
-                    @foreach (var quantity in Model.quantity)
-                    {
-                        <div style="margin-bottom: 16px">@quantity</div>
-                    }
-                </td>
-                <td>
-                    @foreach (var productPrice in Model.price)
-                    {
-                        <div style="margin-bottom: 16px">@productPrice</div>
-                    }
-                </td>
-                <td>@Model.status</td>
-                <!-- Add more table cells for other properties -->
-            </tr>
-        </tbody>
-    </table>
+    @if (Model.price != null)
+    {
+        <table class="table" id="example">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <!-- Add more table headers as needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.ID</td>
+                    <td>
+                        @foreach (var productName in Model.name)
+                        {
+                            <div style="margin-bottom: 16px">@productName</div>
+                        }
+                    </td>
+                    <td>
+                        @foreach (var quantity in Model.quantity)
+                        {
+                            <div style="margin-bottom: 16px">@quantity</div>
+                        }
+                    </td>
+                    <td>
+                        @foreach (var productPrice in Model.price)
+                        {
+                            <div style="margin-bottom: 16px">@productPrice</div>
+                        }
+                    </td>
+                    <td>@Model.status</td>
+                    <!-- Add more table cells for other properties -->
+                </tr>
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h2 style="position:absolute;left:40%;padding-top:1rem;color:red">Not Found</h2>
+    }
+
 
 </body>
 </html>

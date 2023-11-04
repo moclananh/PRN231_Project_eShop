@@ -274,7 +274,7 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class=""><a asp-action="GetBillHistory" asp-controller="Order" style="color: #3f3f3f; font-weight: 500">My Bill</a></li>
-                        
+
                         }
                         else
                         {
@@ -283,14 +283,14 @@
 
                                 <form method="get" action="/@culture/Order/SearchBillById" id="search-form">
                                     <div class="d-flex" style="align-items: center; gap: 8px">
-                                        <input id="keyword" type="text" name="id" placeholder="Enter ID" style="height: 32px; margin-bottom: 0;" />
+                                        <input id="keyword" type="number" name="id" placeholder="Enter ID" style="height: 32px; margin-bottom: 0;" />
                                         <button type="submit" class="btn btn-primary" style="height: 32px; line-height: 18px">Search</button>
                                     </div>
 
                                 </form>
-
+                              
                             </li>
-                        }                       
+                        }
 
                     </ul>
 
@@ -437,7 +437,7 @@
     <script defer src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 
     <script>
-        
+
         var site = new SiteController();
         site.initialize();
         $(document).ready(function () {
