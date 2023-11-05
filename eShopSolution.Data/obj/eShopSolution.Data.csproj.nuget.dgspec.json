@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {}
+    "F:\\Subjects\\PRN231\\Project_Nhom_ver07\\eShopSolution.Data\\eShopSolution.Data.csproj": {}
   },
   "projects": {
-    "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj": {
+    "F:\\Subjects\\PRN231\\Project_Nhom_ver07\\eShopSolution.Data\\eShopSolution.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "projectUniqueName": "F:\\Subjects\\PRN231\\Project_Nhom_ver07\\eShopSolution.Data\\eShopSolution.Data.csproj",
         "projectName": "eShopSolution.Data",
-        "projectPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\eShopSolution.Data.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\2023\\FA23\\PRN231\\ProjectNhomFinalThanhnoibiloi\\prn231_project_eshop\\eShopSolution.Data\\obj\\",
+        "projectPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver07\\eShopSolution.Data\\eShopSolution.Data.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "F:\\Subjects\\PRN231\\Project_Nhom_ver07\\eShopSolution.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

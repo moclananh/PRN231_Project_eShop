@@ -150,12 +150,15 @@
                                 <p style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
                                     @featuredProducts[index][item].Description
                                 </p>
-                                <h4 style="text-align:center">
+                                <div style="text-align:center">
                                     <a class="btn" href="@url">
                                         <i class="icon-zoom-in"></i>
                                     </a> <a class="btn btn-add-cart" data-id="@featuredProducts[index][item].Id" href="#"> <i class="icon-shopping-cart"></i></a>
+                                    
+                                </div>
+                                <div style="text-align: center; margin-top: 8px; margin-bottom: 4px">
                                     <a class="btn btn-primary" href="#">@featuredProducts[index][item].Price</a>
-                                </h4>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -189,15 +192,17 @@
                     <a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px; height: 260px !important; object-fit: contain" /></a>
                     <div class="caption">
                         <h5>@item.Name</h5>
-                        <p>
+                        <p style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
                             @item.Description
                         </p>
-                        <h4 style="text-align:center">
+                        <div style="text-align:center">
                             <a class="btn" href="@url">
                                 <i class="icon-zoom-in"></i>
                             </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"> <i class="icon-shopping-cart"></i></a>
+                        </div>
+                        <div style="text-align: center; margin-top: 8px; margin-bottom: 4px">
                             <a class="btn btn-primary" href="#">@item.Price</a>
-                        </h4>
+                        </div>
                     </div>
                 </div>
             </li>
