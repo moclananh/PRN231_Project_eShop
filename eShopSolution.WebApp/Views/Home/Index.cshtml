@@ -9,6 +9,26 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+
+<style>
+    .container-error {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+        .container-error h1 {
+            color: #ff4444;
+        }
+
+        .container-error p {
+            font-size: 18px;
+        }
+</style>
 @section slider{
     <div id="carouselBlk">
         <div id="myCarousel" class="carousel slide">
@@ -177,7 +197,11 @@
     <h2 localize-content style="color: #3f3f3f; font-weight: 800; text-align: center; margin-bottom: 24px"> Products</h2>
     @if (ViewBag.NotFound != null)
     {
-        <h2 style="padding-top:1rem;color:red">@ViewBag.NotFound</h2>
+@*        <h2 style="padding-top:1rem;color:red">@ViewBag.NotFound</h2>*@
+        <div class="container-error">
+            <h1>Product not found</h1>
+            <p>No product found for this keyword that you search.</p>
+        </div>
     }
     <ul class="thumbnails">
         @foreach (var item in Model.SearchProduct.Items)
