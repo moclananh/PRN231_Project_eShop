@@ -78,10 +78,10 @@
                 var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
                 <li class="span2" style="width: 207px">
                     <div class="thumbnail">
-                        <a href="/@culture.Name/@_loc["products"]/@item.Id"><img src="@(Configuration["BaseAddress"] + @item.ThumbnailImage)" alt="@item.Name" /></a>
+                        <a href="/@culture.Name/@_loc["products"]/@item.Id"><img style="border-top-left-radius: 4px; border-top-right-radius: 4px; height: 260px !important; object-fit: contain" src="@(Configuration["BaseAddress"] + @item.ThumbnailImage)" alt="@item.Name" /></a>
                         <div class="caption">
                             <h5>@item.Name</h5>
-                            <p>
+                            <p style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; height: 60px;">
                                 @item.Description
                             </p>
                             <h4 style="text-align:center">
