@@ -9,12 +9,32 @@
 <html>
 <head>
     <title>Check Bill</title>
+    <style>
+        .container-error {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+            .container-error h1 {
+            color: #ff4444;
+        }
+
+            .container-error p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1 style="text-align: center; font-weight: 700">Check Bill</h1>
+    
     @if (Model.price != null)
     {
+        <h1 style="text-align: center; font-weight: 700">Check Bill</h1>
         <table class="table" id="example">
             <thead>
                 <tr>
@@ -55,7 +75,10 @@
     }
     else
     {
-        <h2 style="position:absolute;left:40%;padding-top:1rem;color:red">Not Found</h2>
+        <div class="container-error">
+            <h1>Invoice not found</h1>
+            <p>No invoices found for this ID.</p>
+        </div>
     }
 
 

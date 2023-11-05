@@ -9,6 +9,26 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+
+<style>
+    .container-error {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+        .container-error h1 {
+            color: #ff4444;
+        }
+
+        .container-error p {
+            font-size: 18px;
+        }
+</style>
 @section slider{
     <div id="carouselBlk">
         <div id="myCarousel" class="carousel slide">
@@ -150,12 +170,15 @@
                                 <p style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
                                     @featuredProducts[index][item].Description
                                 </p>
-                                <h4 style="text-align:center">
+                                <div style="text-align:center">
                                     <a class="btn" href="@url">
                                         <i class="icon-zoom-in"></i>
                                     </a> <a class="btn btn-add-cart" data-id="@featuredProducts[index][item].Id" href="#"> <i class="icon-shopping-cart"></i></a>
+                                    
+                                </div>
+                                <div style="text-align: center; margin-top: 8px; margin-bottom: 4px">
                                     <a class="btn btn-primary" href="#">@featuredProducts[index][item].Price</a>
-                                </h4>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -174,7 +197,11 @@
     <h2 localize-content style="color: #3f3f3f; font-weight: 800; text-align: center; margin-bottom: 24px"> Products</h2>
     @if (ViewBag.NotFound != null)
     {
-        <h2 style="padding-top:1rem;color:red">@ViewBag.NotFound</h2>
+@*        <h2 style="padding-top:1rem;color:red">@ViewBag.NotFound</h2>*@
+        <div class="container-error">
+            <h1>Product not found</h1>
+            <p>No product found for this keyword that you search.</p>
+        </div>
     }
     <ul class="thumbnails">
         @foreach (var item in Model.SearchProduct.Items)
@@ -189,15 +216,17 @@
                     <a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" style="border-top-left-radius: 4px; border-top-right-radius: 4px; height: 260px !important; object-fit: contain" /></a>
                     <div class="caption">
                         <h5>@item.Name</h5>
-                        <p>
+                        <p style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;">
                             @item.Description
                         </p>
-                        <h4 style="text-align:center">
+                        <div style="text-align:center">
                             <a class="btn" href="@url">
                                 <i class="icon-zoom-in"></i>
                             </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"> <i class="icon-shopping-cart"></i></a>
+                        </div>
+                        <div style="text-align: center; margin-top: 8px; margin-bottom: 4px">
                             <a class="btn btn-primary" href="#">@item.Price</a>
-                        </h4>
+                        </div>
                     </div>
                 </div>
             </li>

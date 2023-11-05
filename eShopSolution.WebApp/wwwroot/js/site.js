@@ -4,6 +4,7 @@
         loadCart();
         loadData();
         setHeightCard();
+        setHeightCardPTag();
     }
 
     function setHeightCard() {
@@ -20,6 +21,22 @@
             }
         }
         $(".thumbnails .span2 .thumbnail").height(maxHeight);
+    }
+
+    function setHeightCardPTag() {
+        var maxHeight = 0;
+        for (i = 0; i < $(".thumbnails .span2 .thumbnail .caption p").length; i++) {
+            if ($(".thumbnails .span2 .thumbnail .caption p").eq(i)) {
+                var currentHeight = $(".thumbnails .span2 .thumbnail .caption p").eq(i).height();
+                if (currentHeight >= maxHeight) {
+                    maxHeight = currentHeight;
+                }
+            }
+            else {
+                break;
+            }
+        }
+        $(".thumbnails .span2 .thumbnail .caption p").height(maxHeight);
     }
     function loadCart() {
         const culture = $('#hidCulture').val();
